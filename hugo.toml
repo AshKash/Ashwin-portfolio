@@ -11,33 +11,83 @@ ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
 
-# Main Menu
+# Enable Search
+ShowSearchButton = true
+
+# Home Info Mode
+[params.homeInfoParams]
+Title = "Welcome to AI Consulting 👋"
+Content = """
+I help businesses leverage AI and Machine Learning to solve complex problems and drive innovation. 
+With expertise in AI strategy, implementation, and training, I provide end-to-end solutions for your AI journey.
+
+[Get Started →](/pages/services/)
+"""
+
+# Search Configuration
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# Main Menu with Icons
 [[menu.main]]
 identifier = "about"
 name = "About"
 url = "/pages/about/"
 weight = 10
+pre = "👤 "  # User icon
 
 [[menu.main]]
 identifier = "services"
 name = "Services"
 url = "/pages/services/"
 weight = 20
+pre = "💼 "  # Briefcase icon
 
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
 url = "/projects/"
 weight = 30
+pre = "🚀 "  # Rocket icon
 
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/posts/"
 weight = 40
+pre = "📝 "  # Note icon
 
 [[menu.main]]
 identifier = "testimonials"
 name = "Testimonials"
 url = "/testimonials/"
 weight = 50
+pre = "⭐ "  # Star icon
+
+# Services Submenu
+[[menu.main]]
+identifier = "ai-strategy"
+name = "AI Strategy"
+url = "/services/ai-strategy/"
+parent = "services"
+weight = 1
+
+[[menu.main]]
+identifier = "ml-implementation"
+name = "ML Implementation"
+url = "/services/ml-implementation/"
+parent = "services"
+weight = 2
+
+[[menu.main]]
+identifier = "ai-training"
+name = "AI Training"
+url = "/services/ai-training/"
+parent = "services"
+weight = 3
