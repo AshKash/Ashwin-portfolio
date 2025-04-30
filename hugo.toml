@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ashwinkashyap.ai/'
 languageCode = 'en-us'
 title = '🅰shw🅸n Kashyap Consulting'
 theme = 'PaperMod'
+
+[params]
+hideFooter = true

@@ -1,1 +1,37 @@
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
+# Temporary lock file while building
+/.hugo_build.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Hugo module files
+hugo-module.json
+
+# Node modules if you're using any Node.js tools
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: if you're using a specific theme as a git submodule
+themes/PaperMod/
+themes/ananke/
