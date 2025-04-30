@@ -5,3 +5,39 @@ theme = 'PaperMod'
 
 [params]
 author = "Ashwin Kashyap"
+defaultTheme = "auto"
+ShowBreadCrumbs = true
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+
+# Main Menu
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/pages/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "services"
+name = "Services"
+url = "/pages/services/"
+weight = 20
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 30
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 40
+
+[[menu.main]]
+identifier = "testimonials"
+name = "Testimonials"
+url = "/testimonials/"
+weight = 50
