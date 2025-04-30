@@ -18,15 +18,17 @@ ShowSearchButton = true
 [params.homeInfoParams]
 Title = "AI & ML Consulting 🤖"
 Content = """
-Welcome! I'm Ashwin Kashyap, an AI consultant specializing in turning complex business challenges into innovative AI solutions.
+Welcome! I'm **Ashwin Kashyap**, an AI consultant focused on helping 
+businesses turn complex challenges into practical, high-impact AI solutions.
 
-**What I Offer:**
-🎯 Strategic AI consulting and roadmap development
-🔧 End-to-end ML implementation and deployment
-📚 Customized AI training and workshops
-🤝 Ongoing support and optimization
+**How I Can Help:**  
+🎯 Strategic guidance to define and prioritize your AI roadmap  
+🔧 Full-cycle machine learning development and deployment  
+📚 Tailored training sessions to upskill your team  
+🤝 Long-term support to refine and scale your AI initiatives
 
-Whether you're just starting your AI journey or looking to optimize existing solutions, I'm here to help you succeed.
+Whether you're exploring AI for the first time or refining mature systems, 
+I’ll partner with you to make it work—efficiently and effectively.
 
 [Explore Services →](/pages/services/) | [View Projects →](/projects/) | [Get in Touch →](/pages/about/)
 """
