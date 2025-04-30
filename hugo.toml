@@ -16,12 +16,19 @@ ShowSearchButton = true
 
 # Home Info Mode
 [params.homeInfoParams]
-Title = "Welcome to AI Consulting 👋"
+Title = "AI & ML Consulting 🤖"
 Content = """
-I help businesses leverage AI and Machine Learning to solve complex problems and drive innovation. 
-With expertise in AI strategy, implementation, and training, I provide end-to-end solutions for your AI journey.
+Welcome! I'm Ashwin Kashyap, an AI consultant specializing in turning complex business challenges into innovative AI solutions.
 
-[Get Started →](/pages/services/)
+**What I Offer:**
+🎯 Strategic AI consulting and roadmap development
+🔧 End-to-end ML implementation and deployment
+📚 Customized AI training and workshops
+🤝 Ongoing support and optimization
+
+Whether you're just starting your AI journey or looking to optimize existing solutions, I'm here to help you succeed.
+
+[Explore Services →](/pages/services/) | [View Projects →](/projects/) | [Get in Touch →](/pages/about/)
 """
 
 # Search Configuration
