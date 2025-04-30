@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = '🅰shw🅸n Kashyap Consulting'
 theme = 'PaperMod'
 
+[module]
+  [[module.imports]]
+    path = 'github.com/adityatelange/hugo-PaperMod'
+
 [params]
 author = "Ashwin Kashyap"
 defaultTheme = "auto"
