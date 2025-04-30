@@ -1,27 +1,35 @@
 ---
 title: "About Me"
-date: 2024-04-30
+date: 2025-04-30T12:02:40-07:00
 description: "Learn about my background and expertise in AI and machine learning"
 ---
 
 # About Ashwin Kashyap
 
-I am a seasoned AI and machine learning consultant with a passion for helping businesses leverage cutting-edge technology to solve complex problems.
+I am a seasoned AI and machine learning consultant with over 20 years of experience building scalable, high-performance systems at the intersection of software engineering and applied AI. My mission is to help businesses—especially those outside the tech industry—strategically adopt and deploy AI solutions that create real value.
 
 ## Professional Background
 
-[Your professional background and experience]
+Previously, I was a Staff Software Engineer at Meta, where I led teams working on Messenger's machine learning platform and advertising reliability infrastructure. Before that, I co-founded and served as CTO of a 10+ person startup, driving innovation in large-scale video and search systems. My work has spanned mobile clients, search infrastructure, ad modeling, and AI-driven personalization, across both startups and FAANG-scale environments.
 
 ## Expertise
 
-- Artificial Intelligence
-- Machine Learning
-- [Other areas of expertise]
+- Artificial Intelligence Strategy & Implementation  
+- Machine Learning & Recommendation Systems  
+- Search and Retrieval (RAG, Vector Search)  
+- Scalable Platform Engineering  
+- AI Infrastructure and MLOps  
+- Technical Leadership in Resource-Constrained Environments
 
 ## Education
 
-[Your educational background]
+- B.S. in Computer Science, with honors  
+- Ongoing coursework in business strategy and AI applications  
 
 ## Contact
 
-Feel free to reach out to discuss how I can help with your AI and machine learning needs. 
+Feel free to reach out to discuss how I can help with your AI and machine learning needs.
+
+📧 [info@ashwinkashyap.ai]  
+🌐 [ashwinkashyap.ai]  
+🕸️ [https://www.linkedin.com/in/ashwinkashyap/]

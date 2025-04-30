@@ -1,35 +1,39 @@
 ---
 title: "Services"
-date: 2024-04-30
+date: 2025-04-30T12:02:40-07:00
 description: "AI and machine learning consulting services"
 ---
 
 # Consulting Services
 
-I offer a range of AI and machine learning consulting services to help businesses transform their operations and gain competitive advantages.
+I help businesses harness the power of AI and machine learning to drive efficiency, innovation, and growth. My services are designed to be practical, strategic, and tailored to your unique needs.
 
-## AI Strategy Consulting
+## AI Strategy & Advisory
 
-- AI readiness assessment
-- Strategic planning and roadmap development
-- ROI analysis and business case development
+- Evaluate your organization’s AI readiness  
+- Develop actionable roadmaps aligned with business goals  
+- Build business cases with clear ROI and impact assessments  
 
-## Machine Learning Implementation
+## Machine Learning Solutions
 
-- Custom ML model development
-- Data pipeline design and implementation
-- Model deployment and monitoring
+- Design and build custom machine learning models  
+- Set up robust, scalable data pipelines  
+- Deploy and monitor models in production environments  
 
-## AI Training and Workshops
+## Team Enablement & Workshops
 
-- Team training on AI fundamentals
-- Hands-on workshops for specific technologies
-- Best practices and implementation guidance
+- Deliver AI fundamentals training for technical and non-technical teams  
+- Facilitate hands-on workshops with real-world tools and use cases  
+- Share implementation best practices for long-term success  
 
-## Custom Solutions
+## Custom AI Integrations
 
-- Tailored AI solutions for specific business needs
-- Integration with existing systems
-- Ongoing support and maintenance
+- Build end-to-end AI solutions tailored to your workflows  
+- Integrate models into your existing systems and infrastructure  
+- Provide ongoing support and iteration as your needs evolve  
 
-Contact me to discuss how these services can be customized for your specific needs. 
+---
+
+Looking for a trusted partner to bring AI into your business?  
+📧 [info@ashwinkashyap.ai](mailto:info@ashwinkashyap.ai)  
+🌐 [ashwinkashyap.ai](https://ashwinkashyap.ai)
