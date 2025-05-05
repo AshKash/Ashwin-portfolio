@@ -52,4 +52,8 @@ I work directly with founders and business owners to:
 ## 🚀 Let's Work Together
 
 Curious how AI can help your business grow, save time, or stand out?  
-Let’s talk. I’ll help you cut through the noise and find what works – affordably and effectively - [Contact me](/pages/contact/) for a consultation.
+Let’s talk. I’ll help you cut through the noise and find what works – affordably and effectively.
+
+📧 [info@ashwinkashyap.ai](mailto:info@ashwinkashyap.ai)  
+🌐 [ashwinkashyap.ai](https://ashwinkashyap.ai)  
+🕸️ [LinkedIn](https://www.linkedin.com/in/ashwinkashyap/)  
