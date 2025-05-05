@@ -4,7 +4,7 @@
             <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}</span>
             <span>All rights reserved</span>
             <span class="footer__meta">
-                Last updated: {{ now.Format "2006-01-02" }}
+                Last updated: {{ now.Format "2006-01-02 15:04:05 MST" }}
                 {{ with .GitInfo }}
                 <br>
                 <small>Git SHA: {{ .AbbreviatedHash }}</small>
