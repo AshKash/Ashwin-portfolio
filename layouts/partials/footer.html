@@ -5,8 +5,10 @@
             <span>All rights reserved</span>
             <span class="footer__meta">
                 Last updated: {{ now.Format "2006-01-02" }}
+                {{ with .GitInfo }}
                 <br>
-                <small>Git SHA: {{ getenv "GIT_SHA" | default "unknown" }}</small>
+                <small>Git SHA: {{ .AbbreviatedHash }}</small>
+                {{ end }}
             </span>
         </div>
     </div>

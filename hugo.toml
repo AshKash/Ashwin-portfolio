@@ -2,6 +2,7 @@ baseURL = 'https://ashwinkashyap.ai/'
 languageCode = 'en-us'
 title = '🅰shw🅸n Kashyap Consulting'
 theme = 'PaperMod'
+enableGitInfo = true
 
 [params]
 author = "Ashwin Kashyap"
