@@ -35,4 +35,4 @@ Turn your AI strategy into reality with our comprehensive ML implementation serv
 - Docker / Kubernetes
 - Python / Julia
 
-Contact me to discuss your ML implementation needs. 
+[Contact me](/pages/contact/) for a consultation.

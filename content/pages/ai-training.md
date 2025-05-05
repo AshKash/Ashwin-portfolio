@@ -35,4 +35,4 @@ Empower your team with the knowledge and skills needed to work with AI technolog
 - Hands-on labs
 - Custom curricula
 
-Contact me to discuss training programs for your team. 
+[Contact me](/pages/contact/) to discuss training programs for your team. 

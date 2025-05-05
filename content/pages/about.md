@@ -28,8 +28,4 @@ Previously, I was a Staff Software Engineer at Meta, where I led teams working o
 
 ## Contact
 
-Feel free to reach out to discuss how I can help with your AI and machine learning needs.
-
-📧 [info@ashwinkashyap.ai]  
-🌐 [ashwinkashyap.ai]  
-🕸️ [https://www.linkedin.com/in/ashwinkashyap/]
+Feel free to reach out to discuss how I can help with your AI and machine learning needs. [Contact me](/pages/contact/) for a consultation.

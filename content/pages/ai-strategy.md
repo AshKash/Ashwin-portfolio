@@ -35,4 +35,4 @@ Transform your business with a comprehensive AI strategy tailored to your needs.
 - Risk mitigation strategies
 - Measurable outcomes
 
-Contact me to discuss how we can develop your AI strategy. 
+[Contact me](/pages/contact/) to discuss how we can develop your AI strategy. 
