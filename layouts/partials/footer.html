@@ -6,8 +6,8 @@
             <span class="footer__meta">
                 Last updated: {{ now.Format "2006-01-02 15:04:05 MST" }}
                 {{ with .GitInfo }}
-                <br>
-                <small>Git SHA: {{ .AbbreviatedHash }}</small>
+                    <br>
+                    <small>Git SHA: {{ .AbbreviatedHash }}</small>
                 {{ end }}
             </span>
         </div>
