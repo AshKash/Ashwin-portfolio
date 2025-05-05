@@ -3,6 +3,20 @@
         <div class="copyright copyright--user">
             <span>© {{ now.Year }} {{ .Site.Params.author | default .Site.Title }}</span>
             <span>All rights reserved</span>
+            <span class="footer__meta">
+                Last updated: {{ now.Format "2006-01-02" }}
+                <br>
+                <small>Git SHA: {{ getenv "GIT_SHA" | default "unknown" }}</small>
+            </span>
         </div>
     </div>
-</footer> 
+</footer>
+
+<style>
+.footer__meta {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
+</style> 
