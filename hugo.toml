@@ -81,6 +81,13 @@ url = "/testimonials/"
 weight = 50
 pre = "⭐ "  # Star icon
 
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/pages/contact/"
+weight = 60
+pre = "📬 "  # Envelope icon
+
 # Services Submenu
 [[menu.main]]
 identifier = "ai-strategy"

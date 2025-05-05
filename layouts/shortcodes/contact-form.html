@@ -1,0 +1,274 @@
+{{ $formId := "contact-form" }}
+{{ $isDev := eq (getenv "HUGO_ENV") "development" }}
+
+<div class="contact-form-container" data-dev-mode="{{ $isDev }}">
+    {{ if $isDev }}
+    <div class="dev-mode-banner">
+        🛠️ Development Mode - Form submissions will be logged to console
+    </div>
+    {{ end }}
+    
+    <div id="form-messages" class="form-messages" style="display: none;"></div>
+    
+    <form id="{{ $formId }}" class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+
+        <!-- Required Fields -->
+        <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" name="company" required>
+        </div>
+
+        <div class="form-group">
+            <label for="service">Service Interest *</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="ai-strategy">AI Strategy & Advisory</option>
+                <option value="ml-implementation">Machine Learning Solutions</option>
+                <option value="ai-training">Team Enablement & Workshops</option>
+                <option value="custom-integration">Custom AI Integrations</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Project Description *</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <!-- Optional Fields -->
+        <div class="form-group">
+            <label for="phone">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="budget">Budget Range (Optional)</label>
+            <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-10k">Under $10,000</option>
+                <option value="10k-50k">$10,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="over-100k">Over $100,000</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="timeline">Project Timeline (Optional)</label>
+            <select id="timeline" name="timeline">
+                <option value="">Select a timeline</option>
+                <option value="asap">ASAP</option>
+                <option value="1-3-months">1-3 months</option>
+                <option value="3-6-months">3-6 months</option>
+                <option value="6-plus-months">6+ months</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="referral">How did you hear about us? (Optional)</label>
+            <input type="text" id="referral" name="referral">
+        </div>
+
+        <button type="submit" class="submit-button">Send Message</button>
+    </form>
+</div>
+
+<style>
+.contact-form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--entry);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primary-rgb), 0.1);
+}
+
+.submit-button {
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: var(--bg);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background: var(--primary-dark);
+}
+
+.hidden {
+    display: none;
+}
+
+.form-messages {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.form-messages.success {
+    background-color: var(--success-bg, #d4edda);
+    color: var(--success-text, #155724);
+    border: 1px solid var(--success-border, #c3e6cb);
+}
+
+.form-messages.error {
+    background-color: var(--error-bg, #f8d7da);
+    color: var(--error-text, #721c24);
+    border: 1px solid var(--error-border, #f5c6cb);
+}
+
+.dev-mode-banner {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ffeeba;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('{{ $formId }}');
+    const formMessages = document.getElementById('form-messages');
+    const isDev = document.querySelector('.contact-form-container').dataset.devMode === 'true';
+    
+    // Handle form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        const requiredFields = this.querySelectorAll('[required]');
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+            if (!field.value.trim()) {
+                isValid = false;
+                field.style.borderColor = 'var(--error)';
+            } else {
+                field.style.borderColor = 'var(--border)';
+            }
+        });
+        
+        if (isValid) {
+            // Show loading state
+            const submitButton = form.querySelector('.submit-button');
+            const originalButtonText = submitButton.textContent;
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            if (isDev) {
+                // In development, simulate form submission
+                console.log('Form Data:', Object.fromEntries(new FormData(form)));
+                setTimeout(() => {
+                    // Simulate successful submission
+                    formMessages.className = 'form-messages success';
+                    formMessages.textContent = 'Thank you for your message! I will get back to you within 24 hours.';
+                    formMessages.style.display = 'block';
+                    form.reset();
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                }, 1000);
+            } else {
+                // In production, submit to Netlify
+                fetch('/', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        formMessages.className = 'form-messages success';
+                        formMessages.textContent = 'Thank you for your message! I will get back to you within 24 hours.';
+                        formMessages.style.display = 'block';
+                        form.reset();
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                })
+                .catch(error => {
+                    formMessages.className = 'form-messages error';
+                    formMessages.textContent = 'Oops! There was a problem submitting your form. Please try again or email me directly at info@ashwinkashyap.ai';
+                    formMessages.style.display = 'block';
+                })
+                .finally(() => {
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                });
+            }
+        }
+    });
+    
+    // Clear validation styling on input
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+        field.addEventListener('input', function() {
+            this.style.borderColor = 'var(--border)';
+        });
+    });
+});
+</script> 
