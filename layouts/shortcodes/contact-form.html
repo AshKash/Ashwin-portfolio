@@ -1,0 +1,129 @@
+<form name="contact" method="POST" data-netlify="true" class="contact-form">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="company">Company/Organization</label>
+        <input type="text" name="company" id="company">
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" required>
+    </div>
+
+    <div class="form-group">
+        <label for="budget">Budget Range</label>
+        <select name="budget" id="budget">
+            <option value="">Please select...</option>
+            <option value="<25k">Less than $25,000</option>
+            <option value="25k-50k">$25,000 - $50,000</option>
+            <option value="50k-100k">$50,000 - $100,000</option>
+            <option value="100k+">$100,000+</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="timeline">Project Timeline</label>
+        <select name="timeline" id="timeline">
+            <option value="">Please select...</option>
+            <option value="immediate">Immediate (within 1 month)</option>
+            <option value="soon">Soon (1-3 months)</option>
+            <option value="future">Future (3+ months)</option>
+            <option value="exploring">Just exploring options</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="submit-button">Send Message</button>
+    </div>
+</form>
+
+<style>
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--entry);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--theme);
+    color: var(--primary);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.submit-button {
+    background: var(--primary);
+    color: var(--theme);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+}
+
+/* Required field indicator */
+label:after {
+    content: " *";
+    color: #e32;
+    display: none;
+}
+
+label[for="name"]:after,
+label[for="email"]:after,
+label[for="subject"]:after,
+label[for="message"]:after {
+    display: inline;
+}
+</style> 

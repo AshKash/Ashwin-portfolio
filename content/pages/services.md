@@ -34,6 +34,4 @@ I help businesses harness the power of AI and machine learning to drive efficien
 
 ---
 
-Looking for a trusted partner to bring AI into your business?  
-📧 [info@ashwinkashyap.ai](mailto:info@ashwinkashyap.ai)  
-🌐 [ashwinkashyap.ai](https://ashwinkashyap.ai)
+Looking for a [trusted partner](/pages/contact) to bring AI into your business?

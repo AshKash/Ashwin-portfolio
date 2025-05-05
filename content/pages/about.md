@@ -21,15 +21,6 @@ Previously, I was a Staff Software Engineer at Meta, where I led teams working o
 - AI Infrastructure and MLOps  
 - Technical Leadership in Resource-Constrained Environments
 
-## Education
-
-- B.S. in Computer Science, with honors  
-- Ongoing coursework in business strategy and AI applications  
-
 ## Contact
 
-Feel free to reach out to discuss how I can help with your AI and machine learning needs.
-
-📧 [info@ashwinkashyap.ai]  
-🌐 [ashwinkashyap.ai]  
-🕸️ [https://www.linkedin.com/in/ashwinkashyap/]
+Feel free to [reach out](/pages/contact) to discuss how I can help with your AI and machine learning needs.
