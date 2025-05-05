@@ -32,7 +32,7 @@ With a focus on delivering measurable business impact, I help organizations:
 - Build internal AI capabilities through targeted training
 - Optimize existing AI implementations for maximum ROI
 
-[Explore Services →](/pages/services/) | [View Case Studies →](/projects/) | [Schedule Consultation →](/pages/about/)
+[Explore Services →](/pages/services/) | [View Case Studies →](/pages/projects/) | [Schedule Consultation →](/pages/about/)
 """
 
 # Search Configuration
@@ -63,21 +63,21 @@ pre = "💼 "  # Briefcase icon
 [[menu.main]]
 identifier = "projects"
 name = "Projects"
-url = "/projects/"
+url = "/pages/projects/"
 weight = 30
 pre = "🚀 "  # Rocket icon
 
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
-url = "/posts/"
+url = "/pages/posts/"
 weight = 40
 pre = "📝 "  # Note icon
 
 [[menu.main]]
 identifier = "testimonials"
 name = "Testimonials"
-url = "/testimonials/"
+url = "/pages/testimonials/"
 weight = 50
 pre = "⭐ "  # Star icon
 
@@ -92,20 +92,20 @@ pre = "📬 "  # Envelope icon
 [[menu.main]]
 identifier = "ai-strategy"
 name = "AI Strategy"
-url = "/services/ai-strategy/"
+url = "/pages/services/ai-strategy/"
 parent = "services"
 weight = 1
 
 [[menu.main]]
 identifier = "ml-implementation"
 name = "ML Implementation"
-url = "/services/ml-implementation/"
+url = "/pages/services/ml-implementation/"
 parent = "services"
 weight = 2
 
 [[menu.main]]
 identifier = "ai-training"
 name = "AI Training"
-url = "/services/ai-training/"
+url = "/pages/services/ai-training/"
 parent = "services"
 weight = 3
