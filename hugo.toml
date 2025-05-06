@@ -8,7 +8,7 @@ enableGitInfo = true
 author = "Ashwin Kashyap"
 defaultTheme = "auto"
 ShowBreadCrumbs = true
-ShowReadingTime = true
+ShowReadingTime = false
 ShowShareButtons = true
 ShowPostNavLinks = true
 

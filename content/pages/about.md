@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 description: "Learn about my background and expertise in AI and machine learning"
-layout: "about"
+layout: "content"
 ---
 
 # About Ashwin Kashyap
