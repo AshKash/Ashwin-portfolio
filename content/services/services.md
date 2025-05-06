@@ -2,10 +2,6 @@
 title: "AI & ML Services"
 description: "Enterprise-grade AI and machine learning consulting services"
 layout: "content"
-menu:
-  main:
-    weight: 20
-    pre: "💼"
 ---
 
 # AI & ML Consulting Services
