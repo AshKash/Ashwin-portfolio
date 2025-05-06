@@ -84,8 +84,8 @@ pre = "📧 "  # Email icon
 
 # Services Submenu
 [[menu.main]]
-identifier = "ai-strategy"
-name = "AI Strategy"
-url = "/services/ai-strategy/"
+identifier = "services"
+name = "Services"
+url = "/services/services/"
 parent = "services"
 weight = 1
