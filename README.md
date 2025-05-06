@@ -45,7 +45,6 @@ A professional portfolio website built with Hugo and the PaperMod theme, showcas
 ├── content/           # Content files
 │   ├── pages/        # Static pages
 │   ├── posts/        # Blog posts
-│   ├── projects/     # Project case studies
 │   └── services/     # Service descriptions
 ├── layouts/          # Custom layouts
 ├── static/           # Static assets

@@ -14,4 +14,15 @@
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL" 
+  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+
+# Form handling configuration
+[[redirects]]
+  from = "/success"
+  to = "/success/"
+  status = 301
+
+[[redirects]]
+  from = "/success/"
+  to = "/success/"
+  status = 200 
