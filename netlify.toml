@@ -18,11 +18,11 @@
 
 # Form handling configuration
 [[redirects]]
-  from = "/success"
-  to = "/success/"
+  from = "/contact-post-success"
+  to = "/contact-post-success/"
   status = 301
 
 [[redirects]]
-  from = "/success/"
-  to = "/success/"
+  from = "/contact-post-success/"
+  to = "/contact-post-success/"
   status = 200 

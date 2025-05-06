@@ -2,6 +2,7 @@
 title: "About Me"
 description: "Learn about my background and expertise in AI and machine learning"
 layout: "content"
+weight: 1
 ---
 
 # About Me

@@ -8,6 +8,7 @@ enableGitInfo = true
 [params]
 # author = "Ashwin Kashyap"
 defaultTheme = "auto"
+summaryLength = 200
 
 # Display Settings
 ShowBreadCrumbs = true
@@ -27,6 +28,7 @@ strategies aligned with your objectives, designing scalable machine
 learning systems, building internal AI capabilities, and 
 optimizing existing implementations for maximum ROI.
 
+[Learn More About Us →](/pages/about/) | [Explore Services →](/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
 """
 
 # Search Configuration
@@ -50,27 +52,27 @@ pre = "👤"
 [[menu.main]]
 identifier = "services"
 name = "Services"
-url = "/pages/services/"
+url = "/services/"
 weight = 20
 pre = "💼"
-
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/posts/"
-weight = 30
-pre = "📝"
-
-[[menu.main]]
-identifier = "testimonials"
-name = "Testimonials"
-url = "/testimonials/"
-weight = 40
-pre = "⭐"
 
 [[menu.main]]
 identifier = "contact"
 name = "Contact"
 url = "/pages/contact/"
-weight = 50
+weight = 30
 pre = "📧"
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 40
+pre = "📝"
+
+[[menu.main]]
+identifier = "testimonials"
+name = "Testimonials"
+url = "/testimonials/first-client/"
+weight = 50
+pre = "⭐"
