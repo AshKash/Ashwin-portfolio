@@ -4,15 +4,16 @@ title = '🅰shw🅸n Kashyap Consulting'
 theme = 'PaperMod'
 enableGitInfo = true
 
+# Site Parameters
 [params]
 author = "Ashwin Kashyap"
 defaultTheme = "auto"
+
+# Display Settings
 ShowBreadCrumbs = true
 ShowReadingTime = false
 ShowShareButtons = true
 ShowPostNavLinks = true
-
-# Enable Search
 ShowSearchButton = true
 
 # Home Info Mode
@@ -33,7 +34,7 @@ With a focus on delivering measurable business impact, I help organizations:
 - Build internal AI capabilities through targeted training
 - Optimize existing AI implementations for maximum ROI
 
-[Explore Services →](/pages/services/) | [Schedule Consultation →](/pages/about/) | [Contact Me →](/pages/contact/)
+[Explore Services →](/services/services/) | [Schedule Consultation →](/pages/contact/) | [Contact Me →](/pages/contact/)
 """
 
 # Search Configuration
@@ -46,46 +47,38 @@ threshold = 0.4
 minMatchCharLength = 0
 keys = ["title", "permalink", "summary", "content"]
 
-# Main Menu with Icons
+# Main Menu
 [[menu.main]]
 identifier = "about"
 name = "About"
 url = "/pages/about/"
 weight = 10
-pre = "👤 "  # User icon
+pre = "👤"
 
 [[menu.main]]
 identifier = "services"
 name = "Services"
-url = "/pages/services/"
+url = "/services/services/"
 weight = 20
-pre = "💼 "  # Briefcase icon
+pre = "💼"
 
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/posts/"
 weight = 30
-pre = "📝 "  # Note icon
+pre = "📝"
 
 [[menu.main]]
 identifier = "testimonials"
 name = "Testimonials"
 url = "/testimonials/"
 weight = 40
-pre = "⭐ "  # Star icon
+pre = "⭐"
 
 [[menu.main]]
 identifier = "contact"
 name = "Contact"
 url = "/pages/contact/"
 weight = 50
-pre = "📧 "  # Email icon
-
-# Services Submenu
-[[menu.main]]
-identifier = "services"
-name = "Services"
-url = "/services/services/"
-parent = "services"
-weight = 1
+pre = "📧"

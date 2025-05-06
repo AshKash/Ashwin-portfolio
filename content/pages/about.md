@@ -2,25 +2,58 @@
 title: "About Me"
 description: "Learn about my background and expertise in AI and machine learning"
 layout: "content"
+menu:
+  main:
+    weight: 10
+    pre: "👤"
 ---
 
-# About Ashwin Kashyap
+# About Me
 
-I am a seasoned AI and machine learning consultant with over 20 years of experience building scalable, high-performance systems at the intersection of software engineering and applied AI. My mission is to help businesses—especially those outside the tech industry—strategically adopt and deploy AI solutions that create real value.
+I'm a seasoned AI consultant with extensive experience in enterprise-grade machine learning solutions and strategic AI implementation. My expertise spans across various domains of artificial intelligence, with a particular focus on delivering measurable business impact through innovative AI solutions.
 
 ## Professional Background
 
-Previously, I was a Staff Software Engineer at Meta, where I led teams working on Messenger's machine learning platform and advertising reliability infrastructure. Before that, I co-founded and served as CTO of a 10+ person startup, driving innovation in large-scale video and search systems. My work has spanned mobile clients, search infrastructure, ad modeling, and AI-driven personalization, across both startups and FAANG-scale environments.
+With over a decade of experience in the field, I've helped numerous organizations:
+- Develop and execute AI strategies aligned with business objectives
+- Design and implement scalable machine learning systems
+- Build internal AI capabilities through targeted training
+- Optimize existing AI implementations for maximum ROI
 
-## Expertise
+## Core Competencies
 
-- Artificial Intelligence Strategy & Implementation  
-- Machine Learning & Recommendation Systems  
-- Search and Retrieval (RAG, Vector Search)  
-- Scalable Platform Engineering  
-- AI Infrastructure and MLOps  
-- Technical Leadership in Resource-Constrained Environments
+🎯 **Strategic AI Roadmap Development**
+- AI strategy formulation
+- Technology assessment
+- Implementation planning
+- ROI analysis
 
-## Contact
+🔧 **Enterprise ML System Architecture**
+- System design
+- Infrastructure planning
+- Scalability optimization
+- Performance tuning
 
-Feel free to [reach out](/pages/contact) to discuss how I can help with your AI and machine learning needs.
+📚 **Advanced AI Training Programs**
+- Custom training curriculum
+- Hands-on workshops
+- Best practices implementation
+- Team capability building
+
+🤝 **Production ML System Optimization**
+- Performance optimization
+- Cost reduction
+- Reliability improvement
+- Maintenance streamlining
+
+## Approach
+
+My consulting approach is built on three core principles:
+
+1. **Business-First**: Every AI solution must deliver measurable business value
+2. **Practical Implementation**: Focus on real-world, production-ready solutions
+3. **Knowledge Transfer**: Building internal capabilities for long-term success
+
+## Get in Touch
+
+Ready to transform your organization with AI? [Schedule a consultation](/pages/contact/) to discuss how we can work together to achieve your goals.

@@ -1,38 +1,99 @@
 ---
-title: "AI Strategy Consulting"
-date: 2024-04-30
-description: "Strategic AI consulting to help businesses plan and implement AI solutions"
+title: "AI & ML Services"
+description: "Enterprise-grade AI and machine learning consulting services"
+layout: "content"
+menu:
+  main:
+    weight: 20
+    pre: "💼"
 ---
 
-# AI Strategy Consulting
+# AI & ML Consulting Services
 
-Transform your business with a comprehensive AI strategy tailored to your needs.
+Transform your organization with enterprise-grade AI solutions tailored to your business needs.
 
-## Our Approach
+## Strategic AI Consulting
 
-### 1. Assessment
-- Current technology stack evaluation
-- Data readiness assessment
-- Team capability analysis
-- Business process review
+### AI Strategy Development
+- Comprehensive AI readiness assessment
+- Strategic roadmap development
+- Technology stack evaluation
+- ROI analysis and business case development
 
-### 2. Strategy Development
-- AI opportunity identification
-- ROI analysis
-- Risk assessment
-- Implementation roadmap
+### AI Implementation Planning
+- Project scoping and requirements gathering
+- Resource planning and team structure
+- Timeline and milestone development
+- Risk assessment and mitigation strategies
 
-### 3. Planning
-- Resource planning
-- Timeline development
-- Budget estimation
-- Success metrics definition
+## Technical Services
 
-## Benefits
+### Machine Learning System Architecture
+- System design and architecture planning
+- Infrastructure requirements analysis
+- Scalability and performance optimization
+- Security and compliance considerations
 
-- Clear path to AI adoption
-- Prioritized implementation plan
-- Risk mitigation strategies
-- Measurable outcomes
+### MLOps & Production Systems
+- CI/CD pipeline development
+- Model monitoring and maintenance
+- Performance optimization
+- Cost management and resource utilization
 
-Contact me to discuss how we can develop your AI strategy. 
+## Training & Enablement
+
+### AI Training Programs
+- Custom curriculum development
+- Hands-on workshops and training
+- Best practices implementation
+- Team capability building
+
+### Technical Leadership
+- Team structure and hiring guidance
+- Process optimization
+- Knowledge transfer
+- Best practices implementation
+
+## Specialized Solutions
+
+### Natural Language Processing
+- Text classification and analysis
+- Named entity recognition
+- Sentiment analysis
+- Language model implementation
+
+### Computer Vision
+- Image classification
+- Object detection
+- Video analysis
+- Custom model development
+
+### Recommendation Systems
+- Personalization engines
+- Content recommendation
+- Product recommendation
+- Search optimization
+
+## Engagement Models
+
+### Project-Based
+- Fixed-scope implementations
+- Clear deliverables and timelines
+- Defined success metrics
+- Regular progress updates
+
+### Retainer
+- Ongoing support and guidance
+- Regular strategy reviews
+- Continuous optimization
+- Priority access to expertise
+
+### Training & Workshops
+- Custom training programs
+- Hands-on workshops
+- Best practices sessions
+- Team enablement
+
+## Get Started
+
+Ready to transform your organization with AI? [Contact me](/pages/contact/) to discuss your needs and how we can work together to achieve your goals. 
