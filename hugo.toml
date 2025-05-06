@@ -6,7 +6,7 @@ enableGitInfo = true
 
 # Site Parameters
 [params]
-author = "Ashwin Kashyap"
+# author = "Ashwin Kashyap"
 defaultTheme = "auto"
 
 # Display Settings
@@ -20,15 +20,14 @@ ShowSearchButton = true
 [params.homeInfoParams]
 Title = "AI & ML Consulting 🤖"
 Content = """
-Welcome to AI & ML consulting services specializing in enterprise-grade machine learning solutions and strategic AI implementation.
+Welcome to AI & ML consulting services specializing in enterprise-grade
+machine learning solutions and strategic AI implementation. I help 
+transform organizations through AI by developing and executing
+strategies aligned with your objectives, designing scalable machine
+learning systems, building internal AI capabilities, and 
+optimizing existing implementations for maximum ROI.
 
-We help organizations transform their business through AI by:
-- Developing and executing AI strategies aligned with business objectives
-- Designing and implementing scalable machine learning systems
-- Building internal AI capabilities through targeted training
-- Optimizing existing AI implementations for maximum ROI
-
-[Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/)
+[Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
 """
 
 # Search Configuration
@@ -69,10 +68,3 @@ name = "Testimonials"
 url = "/testimonials/"
 weight = 40
 pre = "⭐"
-
-[[menu.main]]
-identifier = "contact"
-name = "Contact"
-url = "/pages/contact/"
-weight = 50
-pre = "📧"
