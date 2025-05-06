@@ -1,7 +1,7 @@
 ---
 title: "About Me"
-date: 2025-04-30T12:02:40-07:00
 description: "Learn about my background and expertise in AI and machine learning"
+layout: "about"
 ---
 
 # About Ashwin Kashyap
