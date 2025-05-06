@@ -20,15 +20,15 @@ ShowSearchButton = true
 [params.homeInfoParams]
 Title = "AI & ML Consulting 🤖"
 Content = """
-Welcome. I'm **Ashwin Kashyap**, a seasoned AI consultant specializing in enterprise-grade machine learning solutions and strategic AI implementation.
+Welcome to AI & ML consulting services specializing in enterprise-grade machine learning solutions and strategic AI implementation.
 
-I help organizations transform their business through AI by:
+We help organizations transform their business through AI by:
 - Developing and executing AI strategies aligned with business objectives
 - Designing and implementing scalable machine learning systems
 - Building internal AI capabilities through targeted training
 - Optimizing existing AI implementations for maximum ROI
 
-[Learn More About Me →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Me →](/pages/contact/)
+[Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/)
 """
 
 # Search Configuration
