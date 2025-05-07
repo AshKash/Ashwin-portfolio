@@ -2,7 +2,7 @@
 title: "Services"
 description: "AI and machine learning consulting services"
 layout: "content"
-weight: 20
+weight: 3
 ---
 
 # AI & ML Consulting Services
@@ -73,4 +73,4 @@ I provide comprehensive AI and machine learning consulting services designed to 
 
 ## Get Started
 
-Ready to transform your organization with AI? [Contact me](/pages/contact/) to discuss your needs and how we can work together to achieve your goals.
+Ready to transform your organization with AI? [Contact me](/pages/contact) to discuss your needs and how we can work together to achieve your goals.

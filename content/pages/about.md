@@ -19,25 +19,25 @@ With over a decade of experience in the field, I've helped numerous organization
 
 ## Core Competencies
 
-🎯 **Strategic AI Roadmap Development**
+### Strategic AI Roadmap Development
 - AI strategy formulation
 - Technology assessment
 - Implementation planning
 - ROI analysis
 
-🔧 **Enterprise ML System Architecture**
+### Enterprise ML System Architecture
 - System design
 - Infrastructure planning
 - Scalability optimization
 - Performance tuning
 
-📚 **Advanced AI Training Programs**
+### Advanced AI Training Programs
 - Custom training curriculum
 - Hands-on workshops
 - Best practices implementation
 - Team capability building
 
-🤝 **Production ML System Optimization**
+### Production ML System Optimization
 - Performance optimization
 - Cost reduction
 - Reliability improvement
@@ -53,4 +53,4 @@ My consulting approach is built on three core principles:
 
 ## Get in Touch
 
-Ready to transform your organization with AI? [Schedule a consultation](/pages/contact/) to discuss how we can work together to achieve your goals.
+Ready to transform your organization with AI? [Schedule a consultation](/pages/contact) to discuss how we can work together to achieve your goals.
