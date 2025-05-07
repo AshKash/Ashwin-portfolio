@@ -1,0 +1,176 @@
+{
+    "allowed_commands": [
+        {
+            "command": "git status",
+            "description": "Check repository status",
+            "safe": true
+        },
+        {
+            "command": "git diff",
+            "description": "Show changes",
+            "safe": true
+        },
+        {
+            "command": "git log",
+            "description": "Show commit history",
+            "safe": true
+        },
+        {
+            "command": "git branch",
+            "description": "List branches",
+            "safe": true
+        },
+        {
+            "command": "git remote -v",
+            "description": "Show remote repositories",
+            "safe": true
+        },
+        {
+            "command": "git show",
+            "description": "Show commit details",
+            "safe": true
+        },
+        {
+            "command": "git config --list",
+            "description": "Show Git configuration",
+            "safe": true
+        },
+        {
+            "command": "git describe",
+            "description": "Show latest tag",
+            "safe": true
+        },
+        {
+            "command": "git rev-parse HEAD",
+            "description": "Show current commit hash",
+            "safe": true
+        },
+        {
+            "command": "git ls-files",
+            "description": "List tracked files",
+            "safe": true
+        },
+        {
+            "command": "git ls-tree -r HEAD",
+            "description": "List all files in repository",
+            "safe": true
+        },
+        {
+            "command": "git for-each-ref --sort=-committerdate refs/heads/",
+            "description": "List branches by last commit date",
+            "safe": true
+        },
+        {
+            "command": "git rev-list --count HEAD",
+            "description": "Count total commits",
+            "safe": true
+        },
+        {
+            "command": "git shortlog -s",
+            "description": "Show commit counts by author",
+            "safe": true
+        },
+        {
+            "command": "git ls-remote --heads origin",
+            "description": "List remote branches",
+            "safe": true
+        },
+        {
+            "command": "ls -la",
+            "description": "List directory contents with details",
+            "safe": true
+        },
+        {
+            "command": "pwd",
+            "description": "Show current working directory",
+            "safe": true
+        },
+        {
+            "command": "which hugo",
+            "description": "Show Hugo executable path",
+            "safe": true
+        },
+        {
+            "command": "hugo version",
+            "description": "Show Hugo version",
+            "safe": true
+        },
+        {
+            "command": "go version",
+            "description": "Show Go version",
+            "safe": true
+        },
+        {
+            "command": "node --version",
+            "description": "Show Node.js version",
+            "safe": true
+        },
+        {
+            "command": "npm --version",
+            "description": "Show npm version",
+            "safe": true
+        },
+        {
+            "command": "find . -type f -name '*.md' | wc -l",
+            "description": "Count markdown files",
+            "safe": true
+        },
+        {
+            "command": "find . -type f -name '*.html' | wc -l",
+            "description": "Count HTML files",
+            "safe": true
+        },
+        {
+            "command": "du -sh .",
+            "description": "Show total directory size",
+            "safe": true
+        },
+        {
+            "command": "file .",
+            "description": "Show file type information",
+            "safe": true
+        },
+        {
+            "command": "uname -a",
+            "description": "Show system information",
+            "safe": true
+        },
+        {
+            "command": "echo $SHELL",
+            "description": "Show current shell",
+            "safe": true
+        },
+        {
+            "command": "echo $PATH",
+            "description": "Show PATH environment variable",
+            "safe": true
+        }
+    ],
+    "require_approval": [
+        "git add",
+        "git commit",
+        "git push",
+        "git pull",
+        "git merge",
+        "git rebase",
+        "git checkout",
+        "git branch",
+        "git tag",
+        "git reset",
+        "git clean",
+        "rm",
+        "mv",
+        "cp",
+        "mkdir",
+        "touch",
+        "chmod",
+        "chown",
+        "sudo",
+        "npm install",
+        "npm uninstall",
+        "go get",
+        "go mod",
+        "hugo new",
+        "hugo server"
+    ]
+} 
