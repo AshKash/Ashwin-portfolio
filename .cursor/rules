@@ -1,0 +1,80 @@
+# Cursor Rules for Ashwin's Portfolio
+
+# Directory Structure
+- content/
+  - pages/          # Main pages like about, contact, services
+  - posts/          # Blog posts and articles
+  - testimonials/   # Client testimonials
+- layouts/
+  - _default/       # Default templates
+  - shortcodes/     # Reusable components
+- static/          # Static assets
+- tests/           # Test files
+- .cursor/         # Cursor IDE configuration
+
+# File Naming Conventions
+- Use kebab-case for content files (e.g., contact-post-success.md)
+- Use camelCase for JavaScript files
+- Use PascalCase for component files
+- Use lowercase for template files
+
+# Content Guidelines
+- All content files must have proper frontmatter with:
+  - title
+  - description
+  - date (for posts)
+  - draft status
+- Use YAML frontmatter delimiters (---)
+- Keep content files in appropriate directories
+
+# Template Rules
+- Base template (baseof.html) must include:
+  - Meta tags
+  - CSS/JS resources
+  - Navigation
+  - Footer
+- Use semantic HTML5 elements
+- Include proper ARIA attributes for accessibility
+
+# Testing Requirements
+- All new features must have corresponding tests
+- Test files should be in the tests/ directory
+- Use Jest for JavaScript tests
+- Test both functionality and accessibility
+
+# Git Workflow
+- Use meaningful commit messages
+- Keep commits focused and atomic
+- Pull with --ff-only to maintain clean history
+- Clean untracked files before major operations
+
+# Code Style
+- Use 2 spaces for indentation
+- Keep lines under 100 characters
+- Use meaningful variable and function names
+- Comment complex logic
+- Follow Hugo best practices for templates
+
+# Asset Management
+- Optimize images before adding
+- Use relative paths for internal links
+- Minify CSS and JavaScript
+- Keep assets organized in appropriate directories
+
+# Security
+- No sensitive data in version control
+- Use environment variables for secrets
+- Validate all form inputs
+- Sanitize user-generated content
+
+# Performance
+- Optimize images and assets
+- Minimize HTTP requests
+- Use lazy loading for images
+- Implement proper caching strategies
+
+# Documentation
+- Keep README up to date
+- Document complex features
+- Include setup instructions
+- Document deployment process 
