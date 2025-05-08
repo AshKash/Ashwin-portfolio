@@ -9,6 +9,7 @@ enableGitInfo = true
 # author = "Ashwin Kashyap"
 defaultTheme = "auto"
 summaryLength = 200
+ShowThemeSwitcher = false
 
 # Display Settings
 ShowBreadCrumbs = true
