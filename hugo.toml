@@ -28,7 +28,7 @@ strategies aligned with your objectives, designing scalable machine
 learning systems, building internal AI capabilities, and 
 optimizing existing implementations for maximum ROI.
 
-[Learn More About Us →](/pages/about/) | [Explore Services →](/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
+[Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
 """
 
 # Search Configuration
@@ -52,7 +52,7 @@ pre = "👤"
 [[menu.main]]
 identifier = "services"
 name = "Services"
-url = "/services/"
+url = "/pages/services/"
 weight = 20
 pre = "💼"
 

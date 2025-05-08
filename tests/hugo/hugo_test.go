@@ -18,6 +18,160 @@ func init() {
 	projectRoot = filepath.Dir(filepath.Dir(wd))
 }
 
+// TestThemeConfiguration verifies that PaperMod theme is properly configured
+func TestThemeConfiguration(t *testing.T) {
+	// Check if theme is properly set in config
+	configPath := filepath.Join(projectRoot, "hugo.toml")
+	content, err := os.ReadFile(configPath)
+	if err != nil {
+		t.Fatalf("Failed to read Hugo config: %v", err)
+	}
+
+	configContent := strings.ToLower(string(content))
+	if !strings.Contains(configContent, `theme = "papermod"`) && !strings.Contains(configContent, `theme = 'papermod'`) {
+		t.Error("PaperMod theme not configured in hugo.toml")
+	}
+
+	// Check if theme directory exists
+	themePath := filepath.Join(projectRoot, "themes", "PaperMod")
+	if _, err := os.Stat(themePath); os.IsNotExist(err) {
+		t.Error("PaperMod theme directory not found")
+	}
+
+	// Check if theme is properly initialized (git submodule)
+	gitModulesPath := filepath.Join(projectRoot, ".gitmodules")
+	if _, err := os.Stat(gitModulesPath); os.IsNotExist(err) {
+		t.Error(".gitmodules file not found")
+	} else {
+		content, err := os.ReadFile(gitModulesPath)
+		if err != nil {
+			t.Fatalf("Failed to read .gitmodules: %v", err)
+		}
+		if !strings.Contains(string(content), "PaperMod") {
+			t.Error("PaperMod theme not found in .gitmodules")
+		}
+	}
+}
+
+// TestHugoConfig verifies critical Hugo configuration settings
+func TestHugoConfig(t *testing.T) {
+	configPath := filepath.Join(projectRoot, "hugo.toml")
+	content, err := os.ReadFile(configPath)
+	if err != nil {
+		t.Fatalf("Failed to read Hugo config: %v", err)
+	}
+
+	configContent := string(content)
+	requiredSettings := []struct {
+		setting string
+		desc    string
+	}{
+		{"baseURL", "Base URL"},
+		{"title", "Site title"},
+		{"theme", "Theme name"},
+		{"languageCode", "Language code"},
+	}
+
+	for _, setting := range requiredSettings {
+		if !strings.Contains(configContent, setting.setting) {
+			t.Errorf("Required Hugo setting '%s' (%s) not found in config", setting.setting, setting.desc)
+		}
+	}
+}
+
+// TestContentStructure verifies the essential content structure
+func TestContentStructure(t *testing.T) {
+	essentialDirs := []struct {
+		path        string
+		description string
+	}{
+		{"content/pages", "Core pages"},
+		{"content/posts", "Blog posts"},
+		{"layouts/partials", "Partial templates"},
+		{"static/css", "Stylesheets"},
+		{"static/js", "JavaScript files"},
+		{"static/images", "Image assets"},
+	}
+
+	for _, dir := range essentialDirs {
+		path := filepath.Join(projectRoot, dir.path)
+		if _, err := os.Stat(path); os.IsNotExist(err) {
+			t.Errorf("%s directory not found at %s", dir.description, path)
+		}
+	}
+}
+
+// TestCorePagesExist verifies that essential pages exist with required frontmatter
+func TestCorePagesExist(t *testing.T) {
+	corePages := []struct {
+		path     string
+		title    string
+		required []string
+	}{
+		{
+			"content/pages/about.md",
+			"About",
+			[]string{"title", "description", "layout"},
+		},
+		{
+			"content/pages/contact.md",
+			"Contact",
+			[]string{"title", "description", "layout"},
+		},
+		{
+			"content/pages/services.md",
+			"Services",
+			[]string{"title", "description", "layout"},
+		},
+	}
+
+	for _, page := range corePages {
+		path := filepath.Join(projectRoot, page.path)
+		content, err := os.ReadFile(path)
+		if err != nil {
+			t.Errorf("Core page %s not found at %s", page.title, path)
+			continue
+		}
+
+		pageContent := string(content)
+		for _, field := range page.required {
+			if !strings.Contains(pageContent, field+":") {
+				t.Errorf("Required frontmatter field '%s' not found in %s", field, page.title)
+			}
+		}
+	}
+}
+
+// TestCustomPartials verifies that custom partials don't override theme templates
+func TestCustomPartials(t *testing.T) {
+	// Check if custom partials exist in the correct location
+	customPartials := []string{
+		"layouts/partials/header.html",
+		"layouts/partials/footer.html",
+	}
+
+	for _, partial := range customPartials {
+		path := filepath.Join(projectRoot, partial)
+		if _, err := os.Stat(path); err == nil {
+			t.Logf("Custom partial found at %s", partial)
+		}
+	}
+
+	// Verify that we're not overriding theme templates
+	themeTemplates := []string{
+		"layouts/_default/baseof.html",
+		"layouts/_default/single.html",
+		"layouts/_default/list.html",
+	}
+
+	for _, template := range themeTemplates {
+		path := filepath.Join(projectRoot, template)
+		if _, err := os.Stat(path); err == nil {
+			t.Errorf("Custom template found at %s - should use theme template instead", template)
+		}
+	}
+}
+
 // TestFormSubmission verifies that the contact form is properly configured
 func TestFormSubmission(t *testing.T) {
 	// Check if contact form shortcode exists
