@@ -1,7 +1,7 @@
 ---
 title: "Contact"
 description: "Get in touch for AI consulting and collaboration opportunities"
-layout: "content"
+layout: "single"
 weight: 2
 ---
 

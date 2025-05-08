@@ -1,7 +1,7 @@
 ---
 title: "Services"
 description: "AI and machine learning consulting services"
-layout: "content"
+layout: "single"
 weight: 3
 ---
 

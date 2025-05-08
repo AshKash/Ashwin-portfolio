@@ -10,7 +10,7 @@ Helping small businesses unlock the power of AI – from idea to deployment.
 
 ---
 
-## 👋 Inception
+## Introduction
 
 I'm an AI and machine learning leader with over 20 years of experience building real-world, scalable products at companies like Apple, Meta, and a startup I co-founded. I've led cross-functional teams, architected search and personalization systems, and shipped AI-powered experiences used by millions. Now, I'm focused on helping small businesses – especially those outside of the tech industry – understand and apply AI to solve real problems.
 
@@ -18,7 +18,7 @@ I bring not only deep technical expertise but also product thinking, startup agi
 
 ---
 
-## 🧠 What I Offer
+## Services Offered
 
 I work directly with founders and business owners to:
 
@@ -30,7 +30,7 @@ I work directly with founders and business owners to:
 
 ---
 
-## 🎯 Why Me?
+## Experience & Expertise
 
 - **AI leadership at scale**: Led ML development at Apple for predictive search and App Clip suggestions; improved ad reliability at Meta with robust pre-processing pipelines.  
 - **Startup co-founder & CTO**: Built a Shazam-like real-time content recognition system for live TV, led a 15-person team from concept to product.  
@@ -40,7 +40,7 @@ I work directly with founders and business owners to:
 
 ---
 
-## ✅ Ideal Clients
+## Ideal Client Profile
 
 - Brick-and-mortar businesses looking to automate or personalize customer interactions  
 - SMBs with proprietary data but no AI expertise  
@@ -49,7 +49,7 @@ I work directly with founders and business owners to:
 
 ---
 
-## 🚀 Let's Work Together
+## Next Steps
 
 Curious how AI can help your business grow, save time, or stand out?  
-[Let’s talk](/pages/contact). I’ll help you cut through the noise and find what works – affordably and effectively.
+[Let's talk](/pages/contact). I'll help you cut through the noise and find what works – affordably and effectively.
