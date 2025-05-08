@@ -6,10 +6,10 @@ enableGitInfo = true
 
 # Site Parameters
 [params]
-# author = "Ashwin Kashyap"
-defaultTheme = "auto"
+author = "Ashwin Kashyap"
+defaultTheme = ""
 summaryLength = 200
-ShowThemeSwitcher = false
+disableThemeToggle = true
 
 # Display Settings
 ShowBreadCrumbs = true
