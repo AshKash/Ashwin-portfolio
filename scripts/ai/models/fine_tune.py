@@ -58,6 +58,7 @@ def preprocess(examples, tokenizer):
         input_texts.append(f"Question: {q}\nAnswer: {a}")
     
     tokenized = tokenizer(input_texts, padding="max_length", truncation=True, max_length=512)
+    tokenized["labels"] = tokenized["input_ids"].copy()  # Add labels for loss computation
     return tokenized
 
 def main():
@@ -91,7 +92,8 @@ def main():
     training_args = TrainingArguments(
         output_dir=OUTPUT_DIR,
         num_train_epochs=3,
-        per_device_train_batch_size=4,
+        per_device_train_batch_size=1,  # Lowered for memory efficiency
+        gradient_accumulation_steps=4,  # Simulate effective batch size of 4
         save_steps=100,
         save_total_limit=2,
         logging_steps=10,
