@@ -1,0 +1,119 @@
+<!-- Chat Agent Interface -->
+<div id="chat-agent" class="chat-agent">
+  <div class="chat-header">
+    <h3>🤖 AI Assistant</h3>
+    <button id="toggle-chat" class="toggle-chat">×</button>
+  </div>
+  <div class="chat-body">
+    <div id="chat-messages"></div>
+    <div class="chat-input">
+      <input id="question" type="text" placeholder="Ask me anything...">
+      <button onclick="answerQuestion()">Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- Chat Agent Script -->
+<script type="module">
+  import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.6.0";
+
+  // Disable remote model loading after preload
+  env.allowRemoteModels = false;
+
+  // Preload embedding and generation pipelines
+  let embedder, generator;
+
+  // Initialize with your site's content
+  const docs = [
+    "This is a portfolio website showcasing various projects and skills.",
+    "The site is built using Hugo, a fast static site generator.",
+    "It features a modern, responsive design with a focus on user experience.",
+    // Add more relevant content about your site
+  ];
+  let docEmbeddings = [];
+
+  async function init() {
+    try {
+      const statusEl = document.getElementById('chat-messages');
+      statusEl.innerHTML = '<div class="message system">Loading AI models...</div>';
+      
+      embedder = await pipeline("feature-extraction", "Xenova/distilbert-base-uncased");
+      generator = await pipeline("text-generation", "Xenova/distilgpt2");
+
+      // Precompute document embeddings
+      for (let doc of docs) {
+        const output = await embedder(doc, { pooling: "mean", normalize: true });
+        docEmbeddings.push(output.data);
+      }
+
+      statusEl.innerHTML = '<div class="message system">AI Assistant is ready! How can I help you?</div>';
+    } catch (error) {
+      console.error('Error initializing AI:', error);
+      document.getElementById('chat-messages').innerHTML = 
+        '<div class="message error">Failed to load AI models. Please try again later.</div>';
+    }
+  }
+
+  function cosineSimilarity(a, b) {
+    let dot = 0, normA = 0, normB = 0;
+    for (let i = 0; i < a.length; i++) {
+      dot += a[i] * b[i];
+      normA += a[i] * a[i];
+      normB += b[i] * b[i];
+    }
+    return dot / (Math.sqrt(normA) * Math.sqrt(normB));
+  }
+
+  async function answerQuestion() {
+    const questionInput = document.getElementById("question");
+    const question = questionInput.value.trim();
+    if (!question) return;
+
+    const messagesEl = document.getElementById("chat-messages");
+    
+    // Add user question to chat
+    messagesEl.innerHTML += `<div class="message user">${question}</div>`;
+    questionInput.value = '';
+    
+    try {
+      messagesEl.innerHTML += '<div class="message system">Thinking...</div>';
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+
+      const qEmbedding = (await embedder(question, { pooling: "mean", normalize: true })).data;
+
+      // Find most relevant document
+      let bestIdx = 0, bestScore = -Infinity;
+      for (let i = 0; i < docs.length; i++) {
+        const score = cosineSimilarity(qEmbedding, docEmbeddings[i]);
+        if (score > bestScore) {
+          bestScore = score;
+          bestIdx = i;
+        }
+      }
+
+      const prompt = `Context: ${docs[bestIdx]}\n\nQ: ${question}\nA:`;
+      const output = await generator(prompt, { max_new_tokens: 50 });
+      const answer = output[0].generated_text.replace(prompt, "").trim();
+      
+      // Replace thinking message with answer
+      messagesEl.lastElementChild.remove();
+      messagesEl.innerHTML += `<div class="message assistant">${answer}</div>`;
+    } catch (error) {
+      console.error('Error generating answer:', error);
+      messagesEl.lastElementChild.remove();
+      messagesEl.innerHTML += '<div class="message error">Sorry, I encountered an error. Please try again.</div>';
+    }
+    
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+  }
+
+  // Toggle chat visibility
+  document.getElementById('toggle-chat').addEventListener('click', () => {
+    const chatAgent = document.getElementById('chat-agent');
+    chatAgent.classList.toggle('collapsed');
+  });
+
+  // Initialize on page load
+  window.onload = init;
+  window.answerQuestion = answerQuestion;
+</script> 
