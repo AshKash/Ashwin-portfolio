@@ -35,3 +35,49 @@ yarn-error.log*
 # Optional: if you're using a specific theme as a git submodule
 themes/PaperMod/
 themes/ananke/
+
+# Hugo default output directory
+/public/
+/resources/
+
+# Temporary files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Model files - DO NOT IGNORE
+!models/finetuned_distilbert/
+!static/models/finetuned_distilbert/

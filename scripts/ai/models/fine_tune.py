@@ -1,124 +1,117 @@
 """
-Fine-tuning script for the Phi-1.5 model using markdown content.
+Fine-tuning script for DistilBERT model using Yelp reviews dataset.
+DistilBERT is optimized for web deployment and provides a good balance of performance and size.
 """
 
 import os
-import json
-from pathlib import Path
-from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer
-from datasets import Dataset
+import logging
+from datasets import load_dataset
+from transformers import (
+    AutoTokenizer,
+    AutoModelForSequenceClassification,
+    TrainingArguments,
+    Trainer,
+    DataCollatorWithPadding
+)
 import torch
-from tqdm import tqdm
+import traceback
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 # Constants
-MODEL_NAME = "microsoft/phi-2"
-OUTPUT_DIR = "models/finetuned_phi"
-CONTENT_DIR = "content"
-
-def collect_markdown_content():
-    """Collect all markdown content from the content directory."""
-    qa_pairs = []
-    
-    def process_markdown_file(file_path):
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-            
-        # Split content into sections
-        sections = content.split('\n\n')
-        current_section = ""
-        
-        for section in sections:
-            if section.startswith('#'):
-                # This is a heading, use it as a question
-                question = section.strip('#').strip()
-                if current_section:
-                    qa_pairs.append({
-                        "question": question,
-                        "answer": current_section.strip()
-                    })
-                current_section = ""
-            else:
-                current_section += section + "\n\n"
-    
-    # Process all markdown files in content directory and subdirectories
-    for root, dirs, files in os.walk(CONTENT_DIR):
-        for file in files:
-            if file.endswith('.md'):
-                file_path = os.path.join(root, file)
-                print(f"Processing {file_path}")
-                process_markdown_file(file_path)
-                print(f"Processed {file_path}: {len(qa_pairs)} Q&A pairs")
-    
-    return qa_pairs
+MODEL_NAME = "distilbert-base-uncased"  # Changed to DistilBERT
+OUTPUT_DIR = "models/finetuned_distilbert"
+DATASET_NAME = "yelp_review_full"
 
 def preprocess(examples, tokenizer):
-    """Preprocess the examples for training."""
-    input_texts = []
-    for q, a in zip(examples["question"], examples["answer"]):
-        input_texts.append(f"Question: {q}\nAnswer: {a}")
-    
-    tokenized = tokenizer(input_texts, padding="max_length", truncation=True, max_length=512)
-    tokenized["labels"] = tokenized["input_ids"].copy()  # Add labels for loss computation
-    return tokenized
+    """Tokenize the texts and prepare for training."""
+    return tokenizer(
+        examples["text"],
+        padding="max_length",
+        truncation=True,
+        max_length=128,
+        return_tensors="pt"
+    )
 
 def main():
-    # Create output directory if it doesn't exist
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
-    # Collect training data
-    print("🧹 Collecting markdown content...")
-    qa_pairs = collect_markdown_content()
-    print(f"📚 Loaded {len(qa_pairs)} Q&A pairs for training.")
-    
-    # Convert to dataset
-    dataset = Dataset.from_dict({
-        "question": [pair["question"] for pair in qa_pairs],
-        "answer": [pair["answer"] for pair in qa_pairs]
-    })
-    
-    # Load model and tokenizer
-    model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-    
-    # Set padding token
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-        model.config.pad_token_id = tokenizer.eos_token_id
-    
-    # Preprocess dataset
-    tokenized_dataset = dataset.map(lambda x: preprocess(x, tokenizer), batched=True)
-    
-    # Training arguments
-    training_args = TrainingArguments(
-        output_dir=OUTPUT_DIR,
-        num_train_epochs=3,
-        per_device_train_batch_size=1,  # Lowered for memory efficiency
-        gradient_accumulation_steps=4,  # Simulate effective batch size of 4
-        save_steps=100,
-        save_total_limit=2,
-        logging_steps=10,
-        learning_rate=2e-5,
-        weight_decay=0.01,
-        warmup_steps=100,
-    )
-    
-    # Initialize trainer
-    trainer = Trainer(
-        model=model,
-        args=training_args,
-        train_dataset=tokenized_dataset,
-    )
-    
-    # Train the model
-    print("🚀 Starting training...")
-    trainer.train()
-    
-    # Save the model
-    print("💾 Saving model...")
-    trainer.save_model()
-    tokenizer.save_pretrained(OUTPUT_DIR)
-    
-    print("✅ Training complete!")
+    """Main training function."""
+    try:
+        logger.info("Starting fine-tuning process...")
+        
+        # Load dataset
+        logger.info(f"Loading dataset: {DATASET_NAME}")
+        dataset = load_dataset(DATASET_NAME)
+        
+        # Load tokenizer
+        logger.info(f"Loading tokenizer: {MODEL_NAME}")
+        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+        
+        # Tokenize dataset (do NOT remove 'label' column)
+        logger.info("Tokenizing dataset...")
+        tokenized_datasets = dataset.map(
+            lambda x: preprocess(x, tokenizer),
+            batched=True
+        )
+        
+        # Add labels (do NOT try to remove 'label' column)
+        tokenized_datasets = tokenized_datasets.map(
+            lambda x: {"labels": x["label"]},
+        )
+        
+        # Load model
+        logger.info(f"Loading model: {MODEL_NAME}")
+        model = AutoModelForSequenceClassification.from_pretrained(
+            MODEL_NAME,
+            num_labels=5  # Yelp reviews have 5 star ratings
+        )
+        
+        # Create data collator
+        data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+        
+        # Training arguments
+        training_args = TrainingArguments(
+            output_dir=OUTPUT_DIR,
+            num_train_epochs=3,
+            per_device_train_batch_size=16,  # Increased batch size as DistilBERT is smaller
+            per_device_eval_batch_size=16,
+            warmup_steps=500,
+            weight_decay=0.01,
+            logging_dir="./logs",
+            logging_steps=100,
+            save_total_limit=2,
+            no_cuda=True,  # Force CPU usage
+            dataloader_num_workers=1,
+            dataloader_pin_memory=False,
+            report_to="none"
+        )
+        
+        # Initialize trainer
+        trainer = Trainer(
+            model=model,
+            args=training_args,
+            train_dataset=tokenized_datasets["train"],
+            eval_dataset=tokenized_datasets["test"],
+            data_collator=data_collator,
+            tokenizer=tokenizer
+        )
+        
+        # Start training
+        logger.info("Starting training...")
+        trainer.train()
+        
+        # Save model
+        logger.info(f"Saving model to {OUTPUT_DIR}")
+        trainer.save_model(OUTPUT_DIR)
+        tokenizer.save_pretrained(OUTPUT_DIR)
+        
+        logger.info("Training completed successfully!")
+        
+    except Exception as e:
+        logger.error(f"An error occurred: {str(e)}")
+        logger.error(traceback.format_exc())
+        raise
 
 if __name__ == "__main__":
-    main() 
+    main()
