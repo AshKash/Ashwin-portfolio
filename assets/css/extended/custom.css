@@ -1,0 +1,306 @@
+:root {
+    /* Primary colors - Deep Blue */
+    --primary: #0f172a;
+    --primary-dim: #1e293b;
+    --primary-bright: #334155;
+    
+    /* Secondary colors - Neutral Gray */
+    --secondary: #4a5568;
+    --secondary-dim: #2d3748;
+    --secondary-bright: #718096;
+    
+    /* Accent colors - AI Purple */
+    --accent: #6366f1;
+    --accent-dim: #4f46e5;
+    --accent-bright: #818cf8;
+    
+    /* Background colors */
+    --bg: #ffffff;
+    --bg-dim: #f8fafc;
+    --bg-bright: #f1f5f9;
+    
+    /* Text colors */
+    --text: #0f172a;
+    --text-dim: #1e293b;
+    --text-bright: #64748b;
+    
+    /* Link colors */
+    --link: var(--secondary);
+    --link-dim: var(--secondary-dim);
+    --link-bright: var(--secondary-bright);
+}
+
+/* Dark mode colors */
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --bg-dim: #1e293b;
+    --bg-bright: #334155;
+    
+    --text: #f8fafc;
+    --text-dim: #e2e8f0;
+    --text-bright: #cbd5e1;
+}
+
+/* Custom styling for AI portfolio */
+.post-content {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.8;
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+.post-content h1, 
+.post-content h2, 
+.post-content h3 {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.post-content h1 {
+    font-size: 2.5em;
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.5em;
+}
+
+.post-content h2 {
+    font-size: 2em;
+    color: var(--secondary);
+}
+
+.post-content h3 {
+    font-size: 1.5em;
+    color: var(--accent);
+}
+
+/* Custom card styling */
+.entry-card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--bg-bright);
+}
+
+.entry-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    border-color: var(--secondary);
+}
+
+/* Custom button styling */
+.btn {
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-dim);
+    border-color: var(--secondary-dim);
+    transform: translateY(-1px);
+}
+
+/* Custom header styling */
+.site-header {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid var(--bg-bright);
+}
+
+[data-theme="dark"] .site-header {
+    background-color: rgba(15, 23, 42, 0.9);
+    border-bottom: 1px solid var(--bg-dim);
+}
+
+/* Custom footer styling */
+.site-footer {
+    border-top: 1px solid var(--bg-bright);
+    padding: 2rem 0;
+    background-color: var(--bg-dim);
+}
+
+/* Custom code block styling */
+pre {
+    border-radius: 0.5rem;
+    background-color: var(--bg-dim) !important;
+    border: 1px solid var(--bg-bright);
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9em;
+    color: var(--secondary);
+}
+
+/* Custom list styling */
+.post-content ul,
+.post-content ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.post-content li {
+    margin-bottom: 0.5em;
+}
+
+.post-content li::marker {
+    color: var(--secondary);
+}
+
+/* Custom blockquote styling */
+.post-content blockquote {
+    border-left: 4px solid var(--secondary);
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    background-color: var(--bg-dim);
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: italic;
+    color: var(--text-dim);
+}
+
+/* Custom table styling */
+.post-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5em 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.post-content th,
+.post-content td {
+    padding: 0.75em;
+    border: 1px solid var(--bg-bright);
+}
+
+.post-content th {
+    background-color: var(--secondary);
+    color: white;
+    font-weight: 600;
+}
+
+/* Custom image styling */
+.post-content img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-content img:hover {
+    transform: scale(1.02);
+}
+
+/* Custom horizontal rule styling */
+.post-content hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--secondary), transparent);
+    margin: 2em 0;
+}
+
+/* Custom link styling */
+.post-content a {
+    color: var(--secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.post-content a:hover {
+    color: var(--secondary-dim);
+    border-bottom-color: var(--secondary-dim);
+}
+
+/* Custom highlight styling */
+.post-content mark {
+    background-color: var(--secondary-bright);
+    color: var(--primary);
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+}
+
+/* Custom tag styling */
+.post-tags {
+    margin: 1em 0;
+}
+
+.post-tags a {
+    background-color: var(--bg-dim);
+    color: var(--secondary);
+    padding: 0.3em 0.8em;
+    border-radius: 1rem;
+    font-size: 0.9em;
+    transition: all 0.2s ease-in-out;
+}
+
+.post-tags a:hover {
+    background-color: var(--secondary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Content page styling */
+.content-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.content-description {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.content-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.content-body a {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
+.content-body a:hover {
+    opacity: 0.8;
+}
+
+.content-body h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: var(--primary);
+}
+
+.content-body p {
+    margin-bottom: 1.5rem;
+}
+
+.content-body ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.content-body li {
+    margin-bottom: 0.5rem;
+} 
