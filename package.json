@@ -1,7 +1,7 @@
 {
   "name": "ashwin-portfolio",
   "version": "1.0.0",
-  "description": "A professional portfolio website built with Hugo and the PaperMod theme, showcasing AI and Machine Learning consulting services.",
+  "description": "A professional portfolio website built with Hugo, showcasing AI and Machine Learning consulting services.",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -15,8 +15,12 @@
   },
   "jest": {
     "testEnvironment": "jsdom",
-    "testMatch": ["**/tests/**/*.test.js"],
-    "setupFiles": ["./tests/setup.js"]
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
   },
   "repository": {
     "type": "git",

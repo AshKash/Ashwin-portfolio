@@ -1,10 +1,10 @@
 # Ashwin Kashyap - AI & ML Consulting Portfolio
 
-A professional portfolio website built with Hugo and the PaperMod theme, showcasing AI and Machine Learning consulting services.
+A professional portfolio website built with Hugo, showcasing AI and Machine Learning consulting services.
 
 ## 🚀 Features
 
-- Modern, responsive design with PaperMod theme
+- Modern, responsive design
 - Dark/Light mode support
 - Search functionality
 - Blog section for articles and updates
@@ -15,7 +15,6 @@ A professional portfolio website built with Hugo and the PaperMod theme, showcas
 ## 🛠️ Tech Stack
 
 - [Hugo](https://gohugo.io/) - Static site generator
-- [PaperMod Theme](https://github.com/adityatelange/hugo-PaperMod) - Clean and modern theme
 - [Netlify](https://www.netlify.com/) - Hosting and deployment
 
 ## 📦 Installation
@@ -48,7 +47,7 @@ A professional portfolio website built with Hugo and the PaperMod theme, showcas
 │   └── services/     # Service descriptions
 ├── layouts/          # Custom layouts
 ├── static/           # Static assets
-└── themes/           # Theme files
+└── tests/           # Test files
 ```
 
 ## 🚀 Deployment
@@ -68,7 +67,6 @@ The site is automatically deployed to Netlify when changes are pushed to the mai
 
 - Site configuration: `hugo.toml`
 - Netlify configuration: `netlify.toml`
-- Theme customization: `themes/PaperMod/`
 
 ## 📝 Content Management
 

@@ -18,41 +18,6 @@ func init() {
 	projectRoot = filepath.Dir(filepath.Dir(wd))
 }
 
-// TestThemeConfiguration verifies that PaperMod theme is properly configured
-func TestThemeConfiguration(t *testing.T) {
-	// Check if theme is properly set in config
-	configPath := filepath.Join(projectRoot, "hugo.toml")
-	content, err := os.ReadFile(configPath)
-	if err != nil {
-		t.Fatalf("Failed to read Hugo config: %v", err)
-	}
-
-	configContent := strings.ToLower(string(content))
-	if !strings.Contains(configContent, `theme = "papermod"`) && !strings.Contains(configContent, `theme = 'papermod'`) {
-		t.Error("PaperMod theme not configured in hugo.toml")
-	}
-
-	// Check if theme directory exists
-	themePath := filepath.Join(projectRoot, "themes", "PaperMod")
-	if _, err := os.Stat(themePath); os.IsNotExist(err) {
-		t.Error("PaperMod theme directory not found")
-	}
-
-	// Check if theme is properly initialized (git submodule)
-	gitModulesPath := filepath.Join(projectRoot, ".gitmodules")
-	if _, err := os.Stat(gitModulesPath); os.IsNotExist(err) {
-		t.Error(".gitmodules file not found")
-	} else {
-		content, err := os.ReadFile(gitModulesPath)
-		if err != nil {
-			t.Fatalf("Failed to read .gitmodules: %v", err)
-		}
-		if !strings.Contains(string(content), "PaperMod") {
-			t.Error("PaperMod theme not found in .gitmodules")
-		}
-	}
-}
-
 // TestHugoConfig verifies critical Hugo configuration settings
 func TestHugoConfig(t *testing.T) {
 	configPath := filepath.Join(projectRoot, "hugo.toml")
@@ -68,7 +33,6 @@ func TestHugoConfig(t *testing.T) {
 	}{
 		{"baseURL", "Base URL"},
 		{"title", "Site title"},
-		{"theme", "Theme name"},
 		{"languageCode", "Language code"},
 	}
 
