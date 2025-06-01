@@ -34,7 +34,6 @@ yarn-error.log*
 
 # Optional: if you're using a specific theme as a git submodule
 themes/PaperMod/
-themes/ananke/
 
 # Hugo default output directory
 /public/
