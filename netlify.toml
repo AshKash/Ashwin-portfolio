@@ -6,9 +6,11 @@
   HUGO_VERSION = "0.146.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+  HUGO_BASEURL = "https://ashwinkashyap.ai"
 
 [context.production.environment]
   HUGO_ENV = "production"
+  HUGO_BASEURL = "https://ashwinkashyap.ai"
 
 [context.deploy-preview]
   command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
@@ -25,4 +27,11 @@
 [[redirects]]
   from = "/contact-post-success/"
   to = "/contact-post-success/"
-  status = 200 
+  status = 200
+
+# Handle trailing slashes
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  force = true 

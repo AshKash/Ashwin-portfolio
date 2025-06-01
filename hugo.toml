@@ -1,8 +1,10 @@
-baseURL = 'https://ashwinkashyap.ai/'
+baseURL = 'https://ashwinkashyap.ai'
 languageCode = 'en-us'
 title = '🅰shw🅸n Kashyap Consulting'
 theme = 'PaperMod'
 enableGitInfo = true
+canonifyURLs = true
+relativeURLs = false
 
 # Site Parameters
 [params]
