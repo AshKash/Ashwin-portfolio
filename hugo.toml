@@ -1,7 +1,6 @@
 baseURL = 'https://ashwinkashyap.ai'
 languageCode = 'en-us'
 title = '🅰shw🅸n Kashyap Consulting'
-theme = 'PaperMod'
 enableGitInfo = true
 canonifyURLs = true
 relativeURLs = false
@@ -9,9 +8,7 @@ relativeURLs = false
 # Site Parameters
 [params]
 author = "Ashwin Kashyap"
-defaultTheme = ""
 summaryLength = 200
-disableThemeToggle = true
 
 # Display Settings
 ShowBreadCrumbs = true
@@ -33,16 +30,6 @@ optimizing existing implementations for maximum ROI.
 
 [Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
 """
-
-# Search Configuration
-[params.fuseOpts]
-isCaseSensitive = false
-shouldSort = true
-location = 0
-distance = 1000
-threshold = 0.4
-minMatchCharLength = 0
-keys = ["title", "permalink", "summary", "content"]
 
 # Main Menu
 [[menu.main]]
