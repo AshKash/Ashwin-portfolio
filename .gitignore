@@ -26,6 +26,7 @@ node_modules/
 # Environment files
 .env
 .env.local
+.env.example
 
 # Debug logs
 npm-debug.log*
@@ -78,6 +79,8 @@ ENV/
 *.sublime-workspace
 *.sublime-project
 
-# Model files - DO NOT IGNORE
-!models/finetuned_distilbert/
-!static/models/finetuned_distilbert/
+# Model files
+models/finetuned_distilbert/*
+models/finetuned_phi/*
+!models/finetuned_distilbert/.gitkeep
+!models/finetuned_phi/.gitkeep
