@@ -4,6 +4,7 @@ title = '🅰shw🅸n Kashyap Consulting'
 enableGitInfo = true
 canonifyURLs = true
 relativeURLs = false
+theme = "ananke"
 
 # Site Parameters
 [params]
