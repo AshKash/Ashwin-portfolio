@@ -9,7 +9,7 @@ theme = "ananke"
 # Site Parameters
 [params]
 author = "Ashwin Kashyap"
-summaryLength = 0
+summaryLength = 10
 mainSections = ["pages"]
 
 # Display Settings

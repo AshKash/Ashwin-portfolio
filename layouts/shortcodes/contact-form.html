@@ -1,0 +1,31 @@
+<div class="mw7 center ph3">
+  <div class="dn bg-green white pa3 br2 mb3 tc">
+    Thank you for your message! I'll get back to you soon.
+  </div>
+  <div class="dn bg-red white pa3 br2 mb3 tc">
+    Sorry, there was a problem submitting your message. Please try again.
+  </div>
+  <div class="form-container">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact-success/" class="measure">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="dn">
+        <input name="bot-field" />
+      </div>
+      <div class="mb3">
+        <label class="db fw6 lh-copy f6" for="name">Your Name</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="text" name="name" id="name" required />
+      </div>
+      <div class="mb3">
+        <label class="db fw6 lh-copy f6" for="email">Your Email</label>
+        <input class="pa2 input-reset ba bg-transparent w-100" type="email" name="email" id="email" required />
+      </div>
+      <div class="mb3">
+        <label class="db fw6 lh-copy f6" for="message">Message</label>
+        <textarea class="pa2 input-reset ba bg-transparent w-100" name="message" id="message" required></textarea>
+      </div>
+      <div>
+        <button class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit">Send</button>
+      </div>
+    </form>
+  </div>
+</div> 
