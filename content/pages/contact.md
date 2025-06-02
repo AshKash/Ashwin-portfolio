@@ -13,4 +13,16 @@ I'm always interested in discussing new AI consulting opportunities and collabor
 
 Fill out the form below to start a conversation about your AI needs:
 
-{{< contact-form >}}
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+  <br>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+  <br>
+  <button type="submit">Send Message</button>
+</form>
