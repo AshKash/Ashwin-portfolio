@@ -1,11 +1,11 @@
-+++
-date = '2024-03-18T09:00:00-07:00'
-draft = false
-title = 'Minimal Python Setup for LLM Development on MacBook'
-description = 'A concise guide to setting up an efficient Python development environment for LLM development on macOS, following current best practices.'
-tags = ['Python', 'Development', 'LLM', 'macOS', 'Environment Setup']
-categories = ['Tutorials']
-+++
+---
+date: '2024-03-18T09:00:00-07:00'
+draft: false
+title: 'Minimal Python Setup for LLM Development on MacBook'
+description: 'A concise guide to setting up an efficient Python development environment for LLM development on macOS, following current best practices.'
+tags: ['Python', 'Development', 'LLM', 'macOS', 'Environment Setup']
+categories: ['Tutorials']
+---
 
 A minimal Python setup for LLM development on a MacBook is crucial for a clean and efficient workflow. Here's a concise guide to current best practices.
 
