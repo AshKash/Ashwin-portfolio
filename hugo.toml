@@ -9,7 +9,8 @@ theme = "ananke"
 # Site Parameters
 [params]
 author = "Ashwin Kashyap"
-summaryLength = 200
+summaryLength = 0
+mainSections = ["pages"]
 
 # Display Settings
 ShowBreadCrumbs = true
@@ -17,6 +18,11 @@ ShowReadingTime = false
 ShowShareButtons = true
 ShowPostNavLinks = true
 ShowSearchButton = true
+
+# Post Order
+[params.posts]
+  sortBy = "Date"
+  sortDirection = "desc"
 
 # Home Info Mode
 [params.homeInfoParams]
@@ -29,7 +35,7 @@ strategies aligned with your objectives, designing scalable machine
 learning systems, building internal AI capabilities, and 
 optimizing existing implementations for maximum ROI.
 
-[Learn More About Us →](/pages/about/) | [Explore Services →](/pages/services/) | [Contact Us →](/pages/contact/) | [Read more](/posts/)
+[About Me →](/pages/about/) | [Services →](/pages/services/) 
 """
 
 # Main Menu
