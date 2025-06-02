@@ -1,76 +1,48 @@
 ---
 title: "Services"
-description: "AI and machine learning consulting services"
-layout: "single"
-weight: 3
+description: "Explore our comprehensive AI and machine learning consulting services"
+layout: "content"
+weight: 2
 ---
 
-# AI & ML Consulting Services
+I offer a comprehensive suite of AI and machine learning consulting services designed to help organizations leverage the power of artificial intelligence effectively and efficiently.
 
-I provide comprehensive AI and machine learning consulting services designed to help your organization achieve measurable business impact through strategic AI implementation.
+## Strategic AI Planning
 
-## Strategic Services
-
-### AI Strategy Development
-- Comprehensive AI readiness assessment
-- Strategic roadmap development
-- Technology stack evaluation
-- ROI analysis and business case development
-
-### AI Implementation Planning
-- Project scoping and requirements gathering
-- Resource planning and team structure
-- Timeline and milestone development
+- AI strategy development aligned with business objectives
+- Technology assessment and roadmap creation
+- Implementation planning and ROI analysis
 - Risk assessment and mitigation strategies
 
-## Technical Services
+## ML System Design & Implementation
 
-### Machine Learning System Architecture
-- System design and architecture planning
-- Infrastructure requirements analysis
-- Scalability and performance optimization
-- Security and compliance considerations
+- Scalable ML system architecture design
+- Infrastructure planning and optimization
+- Model development and deployment
+- Performance tuning and monitoring
 
-### MLOps & Production Systems
-- CI/CD pipeline development
-- Model monitoring and maintenance
-- Performance optimization
-- Cost management and resource utilization
+## AI Capability Building
 
-## Training & Enablement
-
-### AI Training Programs
-- Custom curriculum development
-- Hands-on workshops and training
+- Custom AI training programs
+- Hands-on workshops and mentoring
 - Best practices implementation
-- Team capability building
+- Team capability assessment and development
 
-### Technical Leadership
-- Team structure and hiring guidance
-- Process optimization
-- Knowledge transfer
-- Best practices implementation
+## Implementation Optimization
 
-## Engagement Models
+- Performance optimization of existing AI systems
+- Cost reduction and efficiency improvements
+- Reliability and maintenance enhancements
+- Scalability improvements
 
-### Project-Based
-- Fixed-scope implementations
-- Clear deliverables and timelines
-- Defined success metrics
-- Regular progress updates
+## Approach
 
-### Retainer
-- Ongoing support and guidance
-- Regular strategy reviews
-- Continuous optimization
-- Priority access to expertise
+My consulting approach is built on three core principles:
 
-### Training & Workshops
-- Custom training programs
-- Hands-on workshops
-- Best practices sessions
-- Team enablement
+1. **Business-First**: Every AI solution must deliver measurable business value
+2. **Practical Implementation**: Focus on real-world, production-ready solutions
+3. **Knowledge Transfer**: Building internal capabilities for long-term success
 
 ## Get Started
 
-Ready to transform your organization with AI? [Contact me](/pages/contact) to discuss your needs and how we can work together to achieve your goals.
+Ready to transform your organization with AI? [Contact me](/pages/contact) to discuss how we can work together to achieve your goals.

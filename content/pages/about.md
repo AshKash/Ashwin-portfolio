@@ -5,8 +5,6 @@ layout: "content"
 weight: 1
 ---
 
-# About Me
-
 I'm a seasoned AI consultant with extensive experience in enterprise-grade machine learning solutions and strategic AI implementation. My expertise spans across various domains of artificial intelligence, with a particular focus on delivering measurable business impact through innovative AI solutions.
 
 ## Professional Background
