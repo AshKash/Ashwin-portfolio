@@ -49,5 +49,8 @@
       {{ end }}
       </div>
     </div>
+    {{ if .Params.mermaid }}
+      {{ partial "mermaid.html" . }}
+    {{ end }}
   </article>
 {{ end }} 
