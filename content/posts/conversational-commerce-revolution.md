@@ -3,9 +3,6 @@ title: "The Conversational Commerce Revolution"
 description: "How AI-powered conversations are transforming the future of e-commerce"
 date: 2024-06-02
 tags: ["AI", "E-commerce", "Conversational AI", "Customer Experience"]
-params:
-  post_content_classes: "serif w-100-l"  # Using 100% width for large screens
-
 ---
 
 {{< rawhtml >}}
@@ -137,8 +134,8 @@ params:
             <div class="max-w-4xl mx-auto mt-16 px-4">
                 <h3 class="text-2xl font-bold text-center text-[#005f73] mb-6">Deep Dive: Secure Client-Side Execution</h3>
                 <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
-                    <p class="text-slate-700">Instead of a backend microservice, a secure and lightweight JavaScript library runs directly within the website. This library acts as the in-browser execution engine, responsible for translating the validated user intent and Action Map into concrete actions on the page.</p>
-                    <p class="mt-4 text-slate-700">Upon receiving a validated Action Map from our backend, the library interprets the structured commands. These might involve invoking DOM selectors to interact with page elements, making asynchronous GET/POST calls to site APIs (while respecting browser security policies like CORS), or setting and reading browser cookies to manage session state. Because the LLM only provides the Intermediate Representation (IR), any mistakes in logic or hallucinations are caught during the robust backend validation of the Action Map itself, long before it reaches the client. This modular, client-side approach ensures the final actions are reliable, auditable, and operate safely within the user's browser environment.</p>
+                    <p class="text-slate-700">The final execution of user commands occurs directly within the user's browser, orchestrated by a secure and lightweight JavaScript library. This client-side engine receives a pre-validated Action Map from our backend. This Action Map, already vetted for logical consistency and correctness (ensuring LLM-generated errors are filtered out before reaching the client), dictates the precise operations the library will perform.</p>
+                    <p class="mt-4 text-slate-700">These operations can range from interacting with webpage elements via DOM selectors, making controlled API requests (GET/POST, adhering to CORS), to managing browser cookies for session continuity. This client-centric yet backend-validated execution model ensures that all actions are not only reliable and auditable but also operate securely within the sandboxed environment of the user's browser, respecting all standard web security protocols.</p>
                 </div>
             </div>
         </section>
@@ -283,11 +280,6 @@ params:
         </section>
 
     </main>
-
-    <footer class="bg-[#005f73] text-white text-center mt-16 py-8 px-4">
-        <p class="text-[#e9d8a6]">Harnessing AI to build a more accessible, efficient, and profitable web for everyone.</p>
-        <p class="text-sm mt-2 opacity-75">&copy; 2025 Conversational Commerce Solutions. All Rights Reserved.</p>
-    </footer>
 
     <script>
         // Helper function to wrap long labels for Chart.js
