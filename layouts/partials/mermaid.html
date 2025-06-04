@@ -5,8 +5,19 @@
 <script>
   var config = {
     startOnLoad: true,
-    theme:'{{ if site.Params.mermaid.theme }}{{ site.Params.mermaid.theme }}{{ else }}default{{ end }}',
-    align:'{{ if site.Params.mermaid.align }}{{ site.Params.mermaid.align }}{{ else }}center{{ end }}',
+    theme: '{{ with site.Params.mermaid.theme }}{{ . }}{{ else }}default{{ end }}',
+    align: '{{ with site.Params.mermaid.align }}{{ . }}{{ else }}center{{ end }}',
+    flowchart: {
+      curve: 'basis',
+      padding: 15
+    },
+    timeline: {
+      useWidth: 800,
+      padding: 20
+    },
+    radar: {
+      curveTension: 0.4
+    }
   };
   mermaid.initialize(config);
-</script> 
+</script>
