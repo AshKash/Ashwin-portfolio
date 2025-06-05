@@ -6,7 +6,6 @@
   show_author = true
   show_date = true
   show_comments = false
-  custom_css = ["css/extended/custom.css"]  # Add custom CSS
 
 [menu]
   [[menu.main]]
