@@ -23,6 +23,9 @@ timeline
           Mid-1990s : Web 1.0 era emerges with static webpages [2]
           1992 : First user-friendly web browser ushers in Web 1.0 [2]
                   : Characterized by read-only content and limited interaction [6, 7]
+{{< /mermaid >}}
+{{< mermaid >}}
+timeline 
         section Dynamic Web (Web 2.0)
           1997 : Six Degrees launched (pioneering social media) [5]
           1999 : Darcy DiNucci coins "Web 2.0" term [8]
@@ -30,12 +33,18 @@ timeline
                   : Google's IPO and Facebook's creation accelerate Web 2.0 [2]
                   : Characterized by user-generated content, interactivity, social connectivity [2, 8, 6, 9]
                   : Enabled by AJAX, JavaScript frameworks, XML/JSON, RSS, Web APIs [9]
+{{< /mermaid >}}
+{{< mermaid >}}
+timeline 
         section Dynamic Responsive Web
           2001 : Audi.com features early adaptive layout [12]
           2010 : Ethan Marcotte coins "Responsive Web Design" [12, 13]
           2015 : Google's "Mobilegeddon" boosts mobile-friendly sites [12]
                   : Characterized by fluid grids, flexible images, CSS3 Media Queries [12, 13]
                   : Mobile-first design approach becomes standard [13]
+{{< /mermaid >}}
+{{< mermaid >}}
+timeline 
         section Conversational Web (Predicted)
           2018 : Rise of Transformers in AI [10]
           2022-Present : Massive acceleration in LLM launches [10]
