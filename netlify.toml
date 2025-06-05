@@ -1,5 +1,5 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "git submodule update --init --recursive && hugo --gc --minify"
   publish = "public"
 
 [build.environment]
@@ -13,10 +13,10 @@
   HUGO_BASEURL = "https://ashwinkashyap.ai"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "git submodule update --init --recursive && hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
+  command = "git submodule update --init --recursive && hugo --gc --minify --baseURL $DEPLOY_PRIME_URL"
 
 # Form handling configuration
 [[redirects]]
