@@ -59,16 +59,71 @@ Veridian.ai enhances your search bar with LLM-powered, intent-aware capabilities
 
 {{< mermaid >}}
 flowchart TD
-    A[User Query] --> B[Injected JS Widget]
-    B --> C[Veridian API]
-    C --> D[LLM Intent Parser]
-    D --> E[Search Plan Generator]
-    E --> F[Plan Executor]
-    F --> G[Result Aggregator]
-    G --> H[Custom Result Renderer]
-    H --> I[User Sees Enhanced Results]
+    subgraph Client
+        A[User Query] --> B[Injected JS Widget]
+        B --> C[Client-side Cache]
+        C -->|Cache Miss| D[API Gateway]
+    end
+
+    subgraph API Layer
+        D --> E[Rate Limiter]
+        E --> F[Load Balancer]
+        F --> G[API Servers]
+    end
+
+    subgraph Search Pipeline
+        G --> H[Query Preprocessor]
+        H --> I[LLM Intent Parser]
+        I --> J[Search Plan Generator]
+        J --> K[Plan Executor]
+        K --> L[Result Aggregator]
+    end
+
+    subgraph Caching & Storage
+        M[(Redis Cache)] <--> H
+        M <--> I
+        M <--> L
+        N[(Vector DB)] <--> K
+        O[(Product DB)] <--> K
+    end
+
+    subgraph Fallback System
+        P[Circuit Breaker] --> Q[Fallback Search]
+        Q --> R[Basic Results]
+    end
+
+    L --> V[Custom Result Renderer]
+    V --> W[User Sees Enhanced Results]
 {{< /mermaid >}}
 
+Key architectural features:
+
+1. **Client-side Optimization**
+   - Local caching to reduce API calls
+   - Progressive enhancement for better UX
+   - Graceful degradation if JS is disabled
+
+2. **API Layer**
+   - Rate limiting to prevent abuse
+   - Load balancing for horizontal scaling
+   - API gateway for request routing and auth
+
+3. **Search Pipeline**
+   - Query preprocessing for normalization
+   - LLM-powered intent understanding
+   - Dynamic search plan generation
+   - Parallel execution of search strategies
+
+4. **Caching & Storage**
+   - Redis for fast response caching
+   - Vector DB for semantic search
+   - Product database for structured data
+   - Cache invalidation strategies
+
+5. **Fallback System**
+   - Circuit breaker pattern
+   - Basic search fallback
+   - Graceful degradation paths
 
 ## Component Breakdown
 
