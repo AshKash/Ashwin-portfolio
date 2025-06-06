@@ -20,39 +20,39 @@ The internet has undergone a profound and continuous transformation since its in
 timeline 
         title The Internet's Evolving Paradigms
         section Internet Origins
-          1969 : Creation of ARPANET [1, 2]
-          1991 : Invention of the World Wide Web by Tim Berners-Lee [1, 2]
-          Mid-1990s : Web 1.0 era emerges with static webpages [2]
-          1992 : First user-friendly web browser ushers in Web 1.0 [2]
-                  : Characterized by read-only content and limited interaction [6, 7]
+          1969 : Creation of ARPANET
+          1991 : Invention of the World Wide Web by Tim Berners-Lee
+          Mid-1990s : Web 1.0 era emerges with static webpages
+          1992 : First user-friendly web browser ushers in Web 1.0
+                  : Characterized by read-only content and limited interaction
 {{< /mermaid >}}
 {{< mermaid >}}
 timeline 
         section Dynamic Web (Web 2.0)
-          1997 : Six Degrees launched (pioneering social media) [5]
-          1999 : Darcy DiNucci coins "Web 2.0" term [8]
-          2004 : O'Reilly Media popularizes "Web 2.0" [8]
-                  : Google's IPO and Facebook's creation accelerate Web 2.0 [2]
-                  : Characterized by user-generated content, interactivity, social connectivity [2, 8, 6, 9]
-                  : Enabled by AJAX, JavaScript frameworks, XML/JSON, RSS, Web APIs [9]
+          1997 : Six Degrees launched (pioneering social media)
+          1999 : Darcy DiNucci coins "Web 2.0" term
+          2004 : O'Reilly Media popularizes "Web 2.0"
+                  : Google's IPO and Facebook's creation accelerate Web 2.0
+                  : Characterized by user-generated content, interactivity, social connectivity
+                  : Enabled by AJAX, JavaScript frameworks, XML/JSON, RSS, Web APIs
 {{< /mermaid >}}
 {{< mermaid >}}
 timeline 
         section Dynamic Responsive Web
-          2001 : Audi.com features early adaptive layout [12]
-          2010 : Ethan Marcotte coins "Responsive Web Design" [12, 13]
-          2015 : Google's "Mobilegeddon" boosts mobile-friendly sites [12]
-                  : Characterized by fluid grids, flexible images, CSS3 Media Queries [12, 13]
-                  : Mobile-first design approach becomes standard [13]
+          2001 : Audi.com features early adaptive layout
+          2010 : Ethan Marcotte coins "Responsive Web Design"
+          2015 : Google's "Mobilegeddon" boosts mobile-friendly sites
+                  : Characterized by fluid grids, flexible images, CSS3 Media Queries
+                  : Mobile-first design approach becomes standard
 {{< /mermaid >}}
 {{< mermaid >}}
 timeline 
         section Conversational Web (Predicted)
-          2018 : Rise of Transformers in AI [10]
-          2022-Present : Massive acceleration in LLM launches [10]
-          Future : Natural language interaction, intelligent automation, hyper-personalization [6, 14, 15, 16, 17]
-                  : LLMs become the new interface for web interaction [14, 15, 18]
-                  : Integration with IoT and multimodal interfaces [6, 17]
+          2018 : Rise of Transformers in AI
+          2022-Present : Massive acceleration in LLM launches
+          Future : Natural language interaction, intelligent automation, hyper-personalization
+                  : LLMs become the new interface for web interaction
+                  : Integration with IoT and multimodal interfaces
 
 {{< /mermaid >}}
 
