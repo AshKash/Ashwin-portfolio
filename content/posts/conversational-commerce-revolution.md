@@ -3,9 +3,11 @@ title: "The Conversational Commerce Revolution"
 description: "How AI-powered conversations are transforming the future of e-commerce"
 date: 2024-06-02
 tags: ["AI", "E-commerce", "Conversational AI", "Customer Experience"]
+categories: ["AI", "E-commerce", "Technology"]
 params:
   post_content_classes: "serif w-100-l"
 mermaid: true
+summary: "Explore how AI-powered conversations are revolutionizing e-commerce, from the evolution of web interaction to practical implementation strategies for SMBs. Learn about the transition from static pages to intelligent conversational interfaces."
 ---
 
 ## Turning Websites into Conversational Interfaces: A Blueprint for SMBs and AI-Powered Shopping Agents
