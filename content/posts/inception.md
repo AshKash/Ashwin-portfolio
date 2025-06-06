@@ -1,55 +1,64 @@
 ---
 date: '2025-04-30T09:21:47-07:00'
 draft: false
-title: 'Inception - About me'
+title: 'About Me'
+summary: "AI Strategy & Engineering Consultant with 20+ years of experience at Apple, Meta, and as a startup founder. Specializing in helping small businesses implement AI solutions, from strategy to deployment, with a focus on practical, scalable results."
+categories: ["AI", "Consulting", "Business"]
 ---
 
 # Ashwin Kashyap – AI Strategy & Engineering Consultant
 
-Helping small businesses unlock the power of AI – from idea to deployment.
+## Transforming Businesses Through AI
 
----
+I help small businesses unlock the power of AI – from idea to deployment. With over 20 years of experience building real-world, scalable products at companies like Apple, Meta, and as a startup founder, I bring a unique combination of technical expertise and business acumen to every project.
 
-## Introduction
+## My Approach
 
-I'm an AI and machine learning leader with over 20 years of experience building real-world, scalable products at companies like Apple, Meta, and a startup I co-founded. I've led cross-functional teams, architected search and personalization systems, and shipped AI-powered experiences used by millions. Now, I'm focused on helping small businesses – especially those outside of the tech industry – understand and apply AI to solve real problems.
+I believe in making AI accessible and practical for businesses of all sizes. My approach combines:
 
-I bring not only deep technical expertise but also product thinking, startup agility, and an ability to break down complex AI concepts into actionable strategies that deliver value.
+- **Deep Technical Expertise**: From search systems to personalization engines, I've built AI solutions used by millions
+- **Product Thinking**: Focus on solving real business problems, not just implementing technology
+- **Startup Agility**: Move fast, validate quickly, and iterate based on results
+- **Clear Communication**: Break down complex AI concepts into actionable strategies
 
----
-
-## Services Offered
+## Services
 
 I work directly with founders and business owners to:
 
-- **Develop AI strategy** grounded in your unique business goals  
-- **Identify high-impact use cases** (e.g. personalization, automation, insights)  
-- **Build lightweight prototypes** to validate feasibility and ROI  
-- **Collaborate with engineering or vendor teams** to deliver production-ready solutions  
-- **Educate and empower your team** with practical knowledge to sustain your AI efforts  
-
----
+- **Develop AI Strategy**: Create a roadmap aligned with your business goals
+- **Identify High-Impact Use Cases**: Focus on areas like personalization, automation, and insights
+- **Build Lightweight Prototypes**: Validate feasibility and ROI before full implementation
+- **Deliver Production Solutions**: Collaborate with your team or vendors to bring ideas to life
+- **Empower Your Team**: Provide practical knowledge to sustain your AI initiatives
 
 ## Experience & Expertise
 
-- **AI leadership at scale**: Led ML development at Apple for predictive search and App Clip suggestions; improved ad reliability at Meta with robust pre-processing pipelines.  
-- **Startup co-founder & CTO**: Built a Shazam-like real-time content recognition system for live TV, led a 15-person team from concept to product.  
-- **Full-stack perspective**: Experience across client infrastructure, cloud ML systems, feature engineering pipelines, and personalization at the edge.  
-- **Track record of innovation**: Inventor on multiple patents and contributor to published research in dynamic topic modeling, semantic enrichment, and search relevance.  
-- **Trusted collaborator**: Known for shipping on time, mentoring cross-functional teams, and aligning tech execution with business needs.
+- **AI Leadership at Scale**: 
+  - Led ML development at Apple for predictive search and App Clip suggestions
+  - Improved ad reliability at Meta with robust pre-processing pipelines
+  - Inventor on multiple patents in AI and ML
 
----
+- **Startup Founder & CTO**: 
+  - Built a Shazam-like real-time content recognition system
+  - Led a 15-person team from concept to product
+  - Experience across the full tech stack
 
-## Ideal Client Profile
+- **Full-Stack Perspective**: 
+  - Client infrastructure
+  - Cloud ML systems
+  - Feature engineering pipelines
+  - Edge computing and personalization
 
-- Brick-and-mortar businesses looking to automate or personalize customer interactions  
-- SMBs with proprietary data but no AI expertise  
-- Founders exploring how AI can differentiate their product or service  
-- Enterprises outside of tech ready to take a practical first step into AI  
+## Ideal Clients
 
----
+I work best with:
 
-## Next Steps
+- Brick-and-mortar businesses looking to automate or personalize customer interactions
+- SMBs with proprietary data but no AI expertise
+- Founders exploring how AI can differentiate their product or service
+- Enterprises outside of tech ready to take a practical first step into AI
+
+## Let's Work Together
 
 Curious how AI can help your business grow, save time, or stand out?  
-[Let's talk](/pages/contact). I'll help you cut through the noise and find what works – affordably and effectively.
+[Contact me](/pages/contact) to discuss your needs. I'll help you cut through the noise and find what works – affordably and effectively.
