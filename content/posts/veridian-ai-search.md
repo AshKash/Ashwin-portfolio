@@ -1,6 +1,6 @@
 ---
 title: "Veridian.ai – AI-Powered Search for Modern Websites"
-date: 2024-06-05
+date: 2025-06-05
 description: "Upgrade your website's search experience with Veridian.ai. Intent-aware, LLM-powered, zero-integration solution for product discovery."
 tags: ["AI", "Search", "E-commerce", "LLM", "Product Discovery"]
 categories: ["AI", "E-commerce", "Product"]

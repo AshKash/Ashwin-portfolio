@@ -1,7 +1,7 @@
 ---
 title: "The Conversational Commerce Revolution"
 description: "How AI-powered conversations are transforming the future of e-commerce"
-date: 2024-06-02
+date: 2025-06-02
 tags: ["AI", "E-commerce", "Conversational AI", "Customer Experience"]
 categories: ["AI", "E-commerce", "Technology"]
 params:

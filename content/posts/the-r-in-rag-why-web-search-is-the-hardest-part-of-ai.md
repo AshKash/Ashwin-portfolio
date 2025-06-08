@@ -1,7 +1,7 @@
 ---
 title: "The 'R' in RAG: Why Web Search is the Hardest Part of AI"
 description: "A deep dive into the challenges of web search for Retrieval-Augmented Generation (RAG) systems in AI."
-date: 2024-07-27
+date: 2025-06-07
 tags: ["AI", "RAG", "Web Scraping", "Playwright", "E-commerce"]
 categories: ["AI", "Technology"]
 params:

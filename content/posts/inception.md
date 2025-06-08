@@ -1,7 +1,7 @@
 ---
 date: '2025-04-30T09:21:47-07:00'
 draft: false
-title: 'About Me'
+title: 'Inception'
 summary: "AI Strategy & Engineering Consultant with 20+ years of experience at Apple, Meta, and as a startup founder. Specializing in helping small businesses implement AI solutions, from strategy to deployment, with a focus on practical, scalable results."
 categories: ["AI", "Consulting", "Business"]
 ---
