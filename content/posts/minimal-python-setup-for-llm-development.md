@@ -1,8 +1,9 @@
 ---
-date: '2024-03-18T09:00:00-07:00'
+date: '2025-05-18'
 draft: false
 title: 'Minimal Python Setup for LLM Development on MacBook'
 description: 'A concise guide to setting up an efficient Python development environment for LLM development on macOS, following current best practices.'
+summary: 'This guide provides a minimalist approach to setting up a Python development environment on a MacBook for LLM projects. It advocates for using `pyenv` and `venv` over Conda for a lightweight and flexible setup, and walks through the steps of installing Python, managing virtual environments, and handling dependencies with `requirements.txt`.'
 tags: ['Python', 'Development', 'LLM', 'macOS', 'Environment Setup']
 categories: ['Tutorials']
 ---

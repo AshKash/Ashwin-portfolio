@@ -1,8 +1,9 @@
 ---
-date: '2024-03-19T09:00:00-07:00'
+date: '2025-05-19'
 draft: false
 title: 'Optimizing LLMs for Edge Devices: A GCP & Hugging Face Tutorial'
 description: 'A comprehensive guide on using Google Cloud Platform and Hugging Face Transformers to optimize Large Language Models for edge devices through techniques like distillation, quantization, and pruning.'
+summary: "This tutorial offers a detailed workflow for optimizing Large Language Models (LLMs) for edge devices using Google Cloud Platform (GCP) and Hugging Face. It covers setting up a GCP environment, fine-tuning a small LLM, and then applying advanced optimization techniques including knowledge distillation, quantization (dynamic and static), and pruning. The guide also details how to export the final model to formats like ONNX and TFLite for deployment in browsers (with Transformers.js or ONNX Runtime Web) and on mobile devices."
 tags: ['AI', 'Machine Learning', 'Edge Computing', 'GCP', 'Hugging Face']
 categories: ['Tutorials']
 ---
