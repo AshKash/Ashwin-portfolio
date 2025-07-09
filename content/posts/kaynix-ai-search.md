@@ -1,25 +1,25 @@
 ---
-title: "Veridian.ai – AI-Powered Search for Modern Websites"
+title: "Kaynix – AI-Powered Search for Modern Websites"
 date: 2025-06-05
-description: "Upgrade your website's search experience with Veridian.ai. Intent-aware, LLM-powered, zero-integration solution for product discovery."
+description: "Upgrade your website's search experience with Kaynix. Intent-aware, LLM-powered, zero-integration solution for product discovery."
 tags: ["AI", "Search", "E-commerce", "LLM", "Product Discovery"]
 categories: ["AI", "E-commerce", "Product"]
 params:
   post_content_classes: "serif w-100-l"
 mermaid: true
-summary: "Veridian.ai enhances website search with AI-powered capabilities, requiring no backend changes. Features include natural language understanding, smart product comparisons, and structured result displays."
+summary: "Kaynix enhances website search with AI-powered capabilities, requiring no backend changes. Features include natural language understanding, smart product comparisons, and structured result displays."
 ---
 
 ## Executive Summary
 
 Today's customers expect more than keyword search—they want intelligent, conversational, and context-aware interactions. Most existing website search systems fall short.
 
-**Veridian.ai** upgrades your site search with an AI-powered overlay that requires **no backend changes**, delivering a modern search experience your customers expect.
+**Kaynix** upgrades your site search with an AI-powered overlay that requires **no backend changes**, delivering a modern search experience your customers expect.
 
 
-## What Veridian Does
+## What Kaynix Does
 
-Veridian.ai enhances your search bar with LLM-powered, intent-aware capabilities:
+Kaynix enhances your search bar with LLM-powered, intent-aware capabilities:
 
 - Understands natural language queries
 - Executes smart product searches and comparisons
@@ -130,7 +130,7 @@ Key architectural features:
 ### Injected Frontend Widget
 
 - Intercepts search input
-- Sends query to Veridian backend
+- Sends query to Kaynix backend
 - Displays enhanced results in place or alongside native search
 
 ### Intent Parser (LLM)
@@ -181,5 +181,5 @@ sequenceDiagram
 
 ## Ready to Transform Your Search Experience?
 
-[Contact me](/pages/contact) to schedule a personalized demo and see how Veridian.ai can enhance your website's search capabilities. I'll help you understand the implementation process and discuss how we can tailor the solution to your specific needs.
+[Contact me](/pages/contact) to schedule a personalized demo and see how Kaynix can enhance your website's search capabilities. I'll help you understand the implementation process and discuss how we can tailor the solution to your specific needs.
 
